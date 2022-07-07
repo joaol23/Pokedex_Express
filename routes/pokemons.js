@@ -8,7 +8,8 @@ var error;
 
 export function routePokemon(app) {
     app.get("/api/pokemons", async (req, res) => {
-        const pokemons = await getPokemons();
+         let page = req.query.page;
+        const pokemons = await getPokemons(page);
         if (pokemons.error) {
             res.sendStatus(pokemons.error);
             return;
@@ -29,7 +30,7 @@ export function routePokemon(app) {
     })
 }
 
-async function getPokemons() {
+async function getPokemons(pages) {
     let dataPokemons = await fetch(`${apiPokemonUrl}pokemon?limit=${limitPokemonsPage}&offset=0`);
     if (dataPokemons.status == 200) {
         dataPokemons = await dataPokemons.json();
