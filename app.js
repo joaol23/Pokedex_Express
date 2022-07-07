@@ -19,6 +19,8 @@ app.get("/", (req, res)=>{
     res.render('index', {});
 })
 
+//teste alteração
+
 app.get("/login", (req, res)=>{
     res.render('curriculo', {});
 })
