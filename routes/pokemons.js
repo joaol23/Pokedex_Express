@@ -20,7 +20,7 @@ export function routePokemon(app) {
     app.get("/api/pokemon/:name", async (req, res) => {
         const pokemonName = req.params.name;
         const pokemon = await getPokemonByName(pokemonName);
-        if (pokemon) {
+        if (pokemon.error) {
             res.sendStatus(pokemon.error);
             return;
         }
