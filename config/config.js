@@ -4,3 +4,6 @@ export const PORT = 3000;
 export const PATH_USER_DATABASE = 'model/database/user.json';
 
 export const ERROR_BAD_REQUEST = 400;
+
+
+export const CONFIG_ENCRYPT = 'secretKeyApiCotemig';
