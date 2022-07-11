@@ -1,6 +1,6 @@
 import { apiPokemonUrl, limitPokemonsPage } from '../config/config.js'
 import fetch from 'node-fetch';
-var error;
+import { sendError } from './route.js';
 
 // export const routes = [
 //     { method: "get", path: '/pokemon', url: `${apiPokemonUrl}pokemon?limit=${limitPokemonsPage}&offset=0` }
@@ -8,10 +8,10 @@ var error;
 
 export function routePokemon(app) {
     app.get("/api/pokemons", async (req, res) => {
-         let page = req.query.page;
+        let page = req.query.page;
         const pokemons = await getPokemons(page);
         if (pokemons.error) {
-            res.sendStatus(pokemons.error);
+            sendError(pokemons.error, res, req);
             return;
         }
 
@@ -22,10 +22,10 @@ export function routePokemon(app) {
         const pokemonName = req.params.name;
         const pokemon = await getPokemonByName(pokemonName);
         if (pokemon.error) {
-            res.sendStatus(pokemon.error);
+            sendError(pokemon.error, res, req);
             return;
         }
-        
+
         res.status(200).json({ data: pokemon });
     })
 }
@@ -43,7 +43,7 @@ async function getPokemons(pages) {
         return await Promise.all(dataPokemons);
     }
 
-    return { error: dataPokemons.status};
+    return { error: dataPokemons.status };
 }
 
 async function getPokemonByName(name) {
@@ -52,10 +52,6 @@ async function getPokemonByName(name) {
         return await pokemon.json();
     }
 
-    return { error: pokemon.status};
-}
-
-function setError(err) {
-    error = err;
+    return { error: pokemon.status };
 }
 

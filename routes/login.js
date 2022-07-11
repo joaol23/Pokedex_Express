@@ -1,4 +1,5 @@
 import { createUser } from "../controller/user.js";
+import { sendError } from "./route.js";
 
 export function routeLogin(app) {
     app.route("/api/login")
@@ -6,7 +7,7 @@ export function routeLogin(app) {
             const body = req.body;
             const response = await createUser(body);
             if (response.error) {
-                res.sendStatus(response.error);
+                sendError(response.error, res, req);
                 return;
             }
 
