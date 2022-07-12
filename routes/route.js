@@ -5,7 +5,7 @@ export function sendError(error, res, req) {
         throw new Error("Faltando parametros sendError");
     }
 
-    saveLog(`Error endpoint ${req.url}`, 'endpoint-error', 'error', true);
+    saveLog(`Error endpoint ${req.url}`, 'endpoint', 'error', true);
 
     res.sendStatus(error);
 }

@@ -16,7 +16,6 @@ app.set('view engine', 'ejs');
 
 
 app.use(function(req, res, next) {
-    saveLog(`Endpoint usado : ${req.url} ${Object.keys(req.body).length === 0 ? '' : `body : ${JSON.stringify(req.body)}` }`, 'endpoint');
     next(); 
 })
 
