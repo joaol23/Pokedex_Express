@@ -9,12 +9,12 @@ import { sendError } from './route.js';
 export function routePokemon(app) {
     app.get("/api/pokemons", async (req, res) => {
         let page = req.query.page;
-        const pokemons = await getPokemons(page);
+        const offset = getOffset(page)
+        const pokemons = await getPokemons(offset);
         if (pokemons.error) {
             sendError(pokemons.error, res, req);
             return;
         }
-
         res.status(200).json({ data: pokemons })
     })
 
@@ -25,13 +25,12 @@ export function routePokemon(app) {
             sendError(pokemon.error, res, req);
             return;
         }
-
         res.status(200).json({ data: pokemon });
     })
 }
 
-async function getPokemons(pages) {
-    let dataPokemons = await fetch(`${apiPokemonUrl}pokemon?limit=${limitPokemonsPage}&offset=0`);
+async function getPokemons(offset) {
+    let dataPokemons = await fetch(`${apiPokemonUrl}pokemon?limit=${limitPokemonsPage}&offset=${offset}`);
     if (dataPokemons.status == 200) {
         dataPokemons = await dataPokemons.json();
 
@@ -44,6 +43,11 @@ async function getPokemons(pages) {
     }
 
     return { error: dataPokemons.status };
+}
+
+function getOffset(pages){
+    const offSetPage = (pages - 1) * limitPokemonsPage;
+    return offSetPage
 }
 
 async function getPokemonByName(name) {
