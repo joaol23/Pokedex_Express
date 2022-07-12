@@ -1,8 +1,5 @@
-import fs from 'fs';
 import { ERROR_BAD_REQUEST, PATH_USER_DATABASE } from '../config/config.js';
 import { getUsers, addUserToArray, cryptoPassword, insertNewUser } from '../business/user.js';
-
-
 
 export async function createUser(data) {
     if (!data.name || !data.password) {

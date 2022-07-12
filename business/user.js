@@ -1,14 +1,10 @@
-import fs from 'fs';
 import { CONFIG_ENCRYPT, PATH_USER_DATABASE } from '../config/config.js';
 import CryptoJS from "crypto-js";
+import { User } from '../model/user.js';
 
 export async function getUsers() {
-    let users = await fs.readFileSync(PATH_USER_DATABASE);
-    if (users.length == 0) {
-        return [];
-    }
-    users = await JSON.parse(users);
-    return users;
+    const UserObj = new User();
+    return await UserObj.getData(PATH_USER_DATABASE);
 }
 
 export function addUserToArray(user, arrayUsers) {
@@ -22,5 +18,6 @@ export function cryptoPassword(data) {
 }
 
 export async function insertNewUser(users) {
-    await fs.writeFileSync(PATH_USER_DATABASE, JSON.stringify(users, null, 4));
+    const UserObj = new User();
+    return await UserObj.insertData(PATH_USER_DATABASE, users, true)
 }
