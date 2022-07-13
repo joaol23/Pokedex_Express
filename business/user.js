@@ -20,4 +20,4 @@ export function cryptoPassword(data) {
 export async function insertNewUser(users) {
     const UserObj = new User();
     return await UserObj.insertData(PATH_USER_DATABASE, users, true)
-}
+}   

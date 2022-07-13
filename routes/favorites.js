@@ -1,4 +1,4 @@
-//import { createFavorite } from "../controller/favorites.js";
+import { createFavorite } from "../controller/favorites.js";
 import { sendError } from "./route.js";
 
 export function routeFavorite(app) {
@@ -10,7 +10,6 @@ export function routeFavorite(app) {
                 sendError(response.error, res, req);
                 return;
             }
-
             res.status(response.status).send(response.msg);
         })
 }

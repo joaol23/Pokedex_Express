@@ -4,7 +4,7 @@ export class Model {
     async getData(path, isArray) {
         let data = await fs.readFileSync(path);
         if (isArray) {
-            return (users.length == 0) ? [] : (await JSON.parse(data));
+            return (data.length == 0) ? [] : (await JSON.parse(data));
         }
 
         return (await JSON.parse(data));
