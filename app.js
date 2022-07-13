@@ -4,6 +4,7 @@ import * as url from 'url';
 import { routePokemon } from './routes/pokemons.js';
 import { PORT } from './config/config.js';
 import { routeLogin } from './routes/login.js';
+import { routeFavorite } from './routes/favorites.js';
 import { saveLog } from './lib/log.js';
 
 const __filename = url.fileURLToPath(import.meta.url);
@@ -29,6 +30,7 @@ app.get("/login", (req, res) => {
 
 routePokemon(app);
 routeLogin(app);
+routeFavorite(app);
 
 app.listen(PORT, () => {
     saveLog("A api foi iniciada. Servidor rodando na porta " + PORT, 'general');
