@@ -8,4 +8,4 @@ export function sendError(error, res, req) {
     saveLog(`Error endpoint ${req.url}`, 'endpoint', 'error', true);
 
     res.sendStatus(error);
-}
+}   
