@@ -1,16 +1,17 @@
-import { ERROR_BAD_REQUEST, PATH_USER_DATABASE } from '../config/config.js';
-import { getUsers, addUserToArray, cryptoPassword, insertNewUser } from '../business/user.js';
+import { ERROR_BAD_REQUEST } from '../config/Config.js';
+import { UserBusiness } from '../business/User.js';
 
 export async function createUser(data) {
+    const UserObj = new UserBusiness;
     if (!data.name || !data.password) {
         return { error: ERROR_BAD_REQUEST }
     }
 
-    const users = await getUsers();
-    const dataCrypto = cryptoPassword(data);
-    const newUsers = addUserToArray(dataCrypto, users)
+    const users = await UserObj.getUsers();
+    const dataCrypto = UserObj.cryptoPassword(data);
+    const newUsers = UserObj.addUserToArray(dataCrypto, users)
 
-    await insertNewUser(newUsers);
+    await UserObj.insertNewUser(newUsers);
 
     return { status: 200, msg: 'Usuário criado com sucesso!' };
 }
