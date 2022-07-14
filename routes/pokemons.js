@@ -1,4 +1,4 @@
-import { apiPokemonUrl, limitPokemonsPage } from '../config/config.js'
+import { apiPokemonUrl, limitPokemonsPage } from '../config/Config.js'
 import fetch from 'node-fetch';
 import { sendError } from './route.js';
 

@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import * as url from 'url';
 import { routePokemon } from './routes/pokemons.js';
-import { PORT } from './config/config.js';
+import { PORT } from './config/Config.js';
 import { routeLogin } from './routes/login.js';
 import { routeFavorite } from './routes/favorites.js';
 import { saveLog } from './lib/log.js';
@@ -34,5 +34,4 @@ routeFavorite(app);
 
 app.listen(PORT, () => {
     saveLog("A api foi iniciada. Servidor rodando na porta " + PORT, 'general');
-    console.log('Servidor rodando na porta ' + PORT);
 });

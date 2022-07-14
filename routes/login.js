@@ -1,4 +1,4 @@
-import { createUser } from "../controller/user.js";
+import { createUser } from "../controller/User.js";
 import { sendError } from "./route.js";
 
 export function routeLogin(app) {

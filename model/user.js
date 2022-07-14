@@ -1,5 +1,5 @@
-import { Model } from "./model.js";
+import { Model } from "./Model.js";
 
-export class User extends Model {
+export class UserModel extends Model {
 
 }
