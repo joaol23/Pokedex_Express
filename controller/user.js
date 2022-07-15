@@ -1,17 +1,23 @@
 import { ERROR_BAD_REQUEST } from '../config/Config.js';
-import { UserBusiness } from '../business/User.js';
+import { Controller } from './Controller.js';
+import { PATH_USER_DATABASE } from '../config/ConfigPath.js';
 
-export async function createUser(data) {
-    const UserObj = new UserBusiness;
-    if (!data.name || !data.password) {
-        return { error: ERROR_BAD_REQUEST }
+export class UserController extends Controller {
+    constructor() {
+        super();
     }
 
-    const users = await UserObj.getUsers();
-    const dataCrypto = UserObj.cryptoPassword(data);
-    const newUsers = UserObj.addUserToArray(dataCrypto, users)
+    async createUser(data) {
+        if (!data.name || !data.password) {
+            return { error: ERROR_BAD_REQUEST }
+        }
 
-    await UserObj.insertNewUser(newUsers);
+        const users = await this.business.getData(PATH_USER_DATABASE, true);
+        const dataCrypto = this.business.cryptoPassword(data);
+        const newUsers = this.business.addDataToArray(dataCrypto, users)
 
-    return { status: 200, msg: 'Usuário criado com sucesso!' };
+        await this.business.insertData(PATH_USER_DATABASE, newUsers, true);
+
+        return { status: 200, msg: 'Usuário criado com sucesso!' };
+    }
 }
