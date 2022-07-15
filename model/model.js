@@ -1,9 +1,9 @@
 import fs from 'fs';
 
 export class Model {
-    async getData(path, isArray) {
+    async getData(path, isReturnArray) {
         let data = await fs.readFileSync(path);
-        if (isArray) {
+        if (isReturnArray) {
             return (data.length == 0) ? [] : (await JSON.parse(data));
         }
 

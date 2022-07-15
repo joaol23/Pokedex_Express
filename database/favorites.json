@@ -18,5 +18,37 @@
     {
         "user_id": "2",
         "poke_id": "2"
+    },
+    {
+        "user_id": "3",
+        "poke_id": 4
+    },
+    {
+        "user_id": "3",
+        "poke_id": 4
+    },
+    {
+        "user_id": "3",
+        "poke_id": 4
+    },
+    {
+        "user_id": "3",
+        "poke_id": 4
+    },
+    {
+        "user_id": "3",
+        "poke_id": 4
+    },
+    {
+        "user_id": "3",
+        "poke_id": 4
+    },
+    {
+        "user_id": "3",
+        "poke_id": 4
+    },
+    {
+        "user_id": "3",
+        "poke_id": 4
     }
 ]
