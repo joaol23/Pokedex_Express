@@ -1,4 +1,6 @@
 import fs from 'fs';
+import fetch from 'node-fetch';
+
 
 export class Model {
     async getData(path, isReturnArray) {
@@ -16,5 +18,9 @@ export class Model {
         }
 
         return await fs.appendFileSync(path, JSON.stringify(data, null, 4));
+    }
+
+    async getDataByUrl(url){
+        return await fetch(url);
     }
 }
