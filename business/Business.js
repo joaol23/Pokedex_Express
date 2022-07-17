@@ -3,7 +3,7 @@ export class Business {
         const businessClass = this.constructor.name;
         const model = businessClass.replace('Business', 'Model');
         const nameFile = businessClass.replace('Business', '');
-        
+
         import(`../model/${nameFile}.js`).then(response => {
             this.model = new response[model];
         });
@@ -20,5 +20,11 @@ export class Business {
 
     async insertData(path, data, reWriteFile) {
         return await this.model.insertData(path, data, reWriteFile)
+    }
+
+    getOffset(page, limit) {
+        page = page || 1;
+        const offSetPage = (page - 1) * limit;
+        return offSetPage;
     }
 }
