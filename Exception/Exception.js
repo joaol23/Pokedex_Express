@@ -1,4 +1,4 @@
-import { saveLog as functionSaveLog } from "../lib/log.js";
+import { saveLog as functionSaveLog } from "../lib/Log.js";
 
 export function Exception(exception, saveLog) {
     this.message = exception.message;

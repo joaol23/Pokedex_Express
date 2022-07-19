@@ -1,11 +1,11 @@
 import express from 'express';
 import path from 'path';
 import * as url from 'url';
-import { routePokemon } from './routes/pokemons.js';
+import { routePokemon } from './routes/Pokemons.js';
 import { PORT } from './config/Config.js';
-import { routeLogin } from './routes/login.js';
-import { routeFavorite } from './routes/favorites.js';
-import { saveLog } from './lib/log.js';
+import { routeLogin } from './routes/Login.js';
+import { routeFavorite } from './routes/Favorites.js';
+import { saveLog } from './lib/Log.js';
 
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
