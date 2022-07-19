@@ -1,4 +1,4 @@
-import { FavoritesController } from "../controller/favorites.js";
+import { FavoritesController } from "../controller/Favorites.js";
 
 const FavoritesObj = new FavoritesController()
 
