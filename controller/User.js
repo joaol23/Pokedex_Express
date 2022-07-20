@@ -19,7 +19,20 @@ export class UserController extends Controller {
             await this.business.insertData(PATH_USER_DATABASE, newUsers, true);
             res.status(200).send('Usuário criado com sucesso!');
         } catch (err) {
-            throw new Exception({ message: err.message, status: ERROR_BAD_REQUEST }, true);
+            throw new Exception({ message: err.message, status: err.status }, true);
+        }
+    }
+
+    async validationUser(req, res) {
+        try {
+            this.setData(req.body);
+            this.validateParams();
+            const user = await this.business.validateUser(this.data.name, this.data.password);
+            console.log(user)
+            res.json({ data: user });
+
+        } catch (err) {
+            throw new Exception({ message: err.message, status: err.status }, true);
         }
     }
 }
