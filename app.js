@@ -32,6 +32,6 @@ routePokemon(app);
 routeLogin(app);
 routeFavorite(app);
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     saveLog("A api foi iniciada. Servidor rodando na porta " + PORT, 'general');
 });
