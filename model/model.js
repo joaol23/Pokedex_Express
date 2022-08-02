@@ -17,4 +17,26 @@ export class Model {
 
         return await fs.appendFileSync(path, JSON.stringify(data, null, 4));
     }
+
+    async getId(path){
+        try{
+            let data = await this.getData(path, false);
+            if(data.length > 0)
+            {
+                let highestId = 0;
+                data.map((d)=>{
+                    if(d.id > highestId){
+                        highestId = d.id;
+                    }
+                })
+
+                return highestId + 1
+            }
+
+            return 1
+        }
+        catch(error){
+            console.log(error)
+        }
+    }
 }

@@ -15,18 +15,9 @@ app.use(express.static(path.join(__dirname, "views/public")));
 app.use(express.json())
 app.set('view engine', 'ejs');
 
-
-app.use(function(req, res, next) {
-    next(); 
-})
-
-app.get("/", (req, res) => {
-    res.render('index', {});
-})
-
-app.get("/login", (req, res) => {
-    res.render('curriculo', {});
-})
+// app.get("/", (req, res) => {
+//     res.render('index', {});
+// })
 
 routePokemon(app);
 routeLogin(app);
