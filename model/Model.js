@@ -1,9 +1,11 @@
 import fs from 'fs';
+import fetch from 'node-fetch';
+
 
 export class Model {
-    async getData(path, isArray) {
+    async getData(path, isReturnArray) {
         let data = await fs.readFileSync(path);
-        if (isArray) {
+        if (isReturnArray) {
             return (data.length == 0) ? [] : (await JSON.parse(data));
         }
 
@@ -20,9 +22,12 @@ export class Model {
 
     async getId(path){
         try{
-            let data = await this.getData(path, false);
-            if(data.length > 0)
+            let data = await this.getData(path, true);
+            if(data.length < 1)
             {
+                return 1
+            }
+            else{
                 let highestId = 0;
                 data.map((d)=>{
                     if(d.id > highestId){
@@ -33,10 +38,13 @@ export class Model {
                 return highestId + 1
             }
 
-            return 1
         }
         catch(error){
             console.log(error)
         }
+    }
+    
+    async getDataByUrl(url){
+        return await fetch(url);
     }
 }
