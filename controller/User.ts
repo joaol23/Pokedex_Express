@@ -1,7 +1,7 @@
-import { ERROR_BAD_REQUEST } from '../config/Config.js';
-import { Controller } from './Controller.js';
-import { PATH_USER_DATABASE } from '../config/ConfigPath.js';
-import { Exception } from '../Exception/Exception.js';
+import { Controller } from './Controller';
+import { PATH_USER_DATABASE } from '../config/ConfigPath';
+import { Exception } from '../Exception/Exception';
+import { Request, Response } from "express"
 
 export class UserController extends Controller {
     require = ['name', 'password'];
@@ -9,7 +9,7 @@ export class UserController extends Controller {
         super();
     }
 
-    async createUser(req, res) {
+    async createUser(req: Request, res: Response) {
         try {
             this.setData(req.body);
             this.validateParams();
@@ -19,20 +19,22 @@ export class UserController extends Controller {
             await this.business.insertData(PATH_USER_DATABASE, newUsers, true);
             res.status(200).send('Usuário criado com sucesso!');
         } catch (err) {
-            throw new Exception({ message: err.message, status: err.status }, true);
+            if (err instanceof Exception)
+                throw new Exception(err.status, err.message, true);
         }
     }
 
-    async validationUser(req, res) {
+    async validationUser(req: Request, res: Response) {
         try {
             this.setData(req.body);
             this.validateParams();
             const user = await this.business.validateUser(this.data.name, this.data.password);
             console.log(user)
-            res.json({ data: user });
+            reson({ data: user });
 
         } catch (err) {
-            throw new Exception({ message: err.message, status: err.status }, true);
+            if (err instanceof Exception)
+                throw new Exception(err.status, err.message, true);
         }
     }
 }

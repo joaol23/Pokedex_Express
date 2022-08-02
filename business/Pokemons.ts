@@ -1,5 +1,5 @@
-import { apiPokemonUrl, limitPokemonsPage } from '../config/Config.js';
-import { Business } from './Business.js';
+import { apiPokemonUrl, limitPokemonsPage } from '../config/Config';
+import { Business } from './Business';
 
 export class PokemonsBusiness extends Business {
     constructor() {
@@ -9,7 +9,7 @@ export class PokemonsBusiness extends Business {
     async getPokemons(offset) {
         let dataPokemons = await this.model.getDataByUrl(`${apiPokemonUrl}pokemon?limit=${limitPokemonsPage}&offset=${offset}`);
         if (dataPokemons.status == 200) {
-            dataPokemons = await dataPokemons.json();
+            dataPokemons = await dataPokemonson();
 
             dataPokemons = dataPokemons.results.map(async (pokemon) => {
                 return await this.getEachPokemonInfo(pokemon)
@@ -22,7 +22,7 @@ export class PokemonsBusiness extends Business {
     }
 
     async getEachPokemonInfo(pokemon) {
-        return await (await this.model.getDataByUrl(pokemon.url)).json();
+        return await (await this.model.getDataByUrl(pokemon.url))on();
     }
 
     async getPokemonByName(name) {

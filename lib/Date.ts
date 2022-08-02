@@ -1,6 +1,6 @@
-import { putZeroBeforeNumber } from "./String.js";
+import { putZeroBeforeNumber } from "./String";
 
-export function getStringDate(separetor) {
+export function getStringDate(separetor: string) {
     const date = new Date();
     const month = putZeroBeforeNumber(date.getMonth() + 1);
     const year = date.getFullYear();

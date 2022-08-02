@@ -6,10 +6,10 @@ export class Model {
     async getData(path, isReturnArray) {
         let data = await fs.readFileSync(path);
         if (isReturnArray) {
-            return (data.length == 0) ? [] : (await JSON.parse(data));
+            return (data.length == 0) ? [] : (await JSON.parse(data.toString()));
         }
 
-        return (await JSON.parse(data));
+        return (data.length == 0) ? {} : (await JSON.parse(data.toString()));
     }
 
     async insertData(path, data, reWriteFile = false) {
@@ -20,7 +20,8 @@ export class Model {
         return await fs.appendFileSync(path, JSON.stringify(data, null, 4));
     }
 
-    async getDataByUrl(url){
+    async getDataByUrl(url) {
         return await fetch(url);
     }
 }
+    

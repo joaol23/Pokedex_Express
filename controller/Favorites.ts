@@ -1,7 +1,8 @@
-import { ERROR_BAD_REQUEST } from '../config/Config.js';
-import { Controller } from './Controller.js';
-import { PATH_FAVORITE_DATABASE } from '../config/ConfigPath.js';
-import { Exception } from '../Exception/Exception.js';
+import { ERROR_BAD_REQUEST } from '../config/Config';
+import { Controller } from './Controller';
+import { PATH_FAVORITE_DATABASE } from '../config/ConfigPath';
+import { Exception } from '../Exception/Exception';
+import { Request, Response } from "express"
 
 export class FavoritesController extends Controller {
     require = ['user_id', 'poke_id'];
@@ -10,7 +11,7 @@ export class FavoritesController extends Controller {
         super();
     }
 
-    async createFavorite(req, res) {
+    async createFavorite(req: Request, res: Response) {
         try {
             this.setData(req.body);
             this.validateParams();
@@ -19,7 +20,8 @@ export class FavoritesController extends Controller {
             await this.business.insertData(PATH_FAVORITE_DATABASE, this.data, true);
             res.status(200).send('Pokemon Favoritado!');
         } catch (err) {
-            throw new Exception({ message: err.message, status: ERROR_BAD_REQUEST }, true);
+            if (err instanceof Exception)
+                throw new Exception(ERROR_BAD_REQUEST, err.message, true);
         }
     }
 }

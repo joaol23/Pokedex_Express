@@ -1,4 +1,4 @@
-import { Business } from './Business.js';
+import { Business } from './Business';
 
 export class FavoritesBusiness extends Business {
     constructor() {

@@ -1,10 +1,11 @@
 export class Business {
+    model: any;
     constructor() {
         const businessClass = this.constructor.name;
         const model = businessClass.replace('Business', 'Model');
         const nameFile = businessClass.replace('Business', '');
 
-        import(`../model/${nameFile}.js`).then(response => {
+        import(`../model/${nameFile}`).then(response => {
             this.model = new response[model];
         });
     }
