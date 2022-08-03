@@ -1,7 +1,7 @@
 import winston from "winston";
-import { formatLog, NAME_LOG } from "../config/ConfigLog";
-import { Exception } from "../Exception/Exception";
-import { getStringDate } from "./Date";
+import { formatLog, NAME_LOG } from "../config/ConfigLog.js";
+import { Exception } from "../Exception/Exception.js";
+import { getStringDate } from "./Date.js";
 
 const { combine, printf, label, timestamp } = winston.format;
 

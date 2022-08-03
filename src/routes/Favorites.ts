@@ -1,6 +1,6 @@
-import { FavoritesController } from "../controller/Favorites";
+import { FavoritesController } from "../controller/Favorites.js";
 import express, { Request, Response } from "express"
-import { Exception } from "../Exception/Exception";
+import { Exception } from "../Exception/Exception.js";
 
 const FavoritesObj = new FavoritesController()
 

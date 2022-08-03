@@ -1,4 +1,4 @@
-import { Exception } from "../Exception/Exception";
+import { Exception } from "../Exception/Exception.js";
 
 export class Controller {
     business: any;
@@ -13,7 +13,7 @@ export class Controller {
         this.business = {};
         this.data = [];
         this.require = [];
-        import(`../business/${nameFile}`).then(response => {
+        import(`../business/${nameFile}.js`).then(response => {
             this.business = new response[business];
         });
     }

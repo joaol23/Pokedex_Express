@@ -1,6 +1,6 @@
-import { UserController } from "../controller/User";
+import { UserController } from "../controller/User.js";
 import express, { Request, Response } from "express"
-import { Exception } from "../Exception/Exception";
+import { Exception } from "../Exception/Exception.js";
 
 const UserObj = new UserController();
 

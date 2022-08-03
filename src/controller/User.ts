@@ -1,6 +1,6 @@
-import { Controller } from './Controller';
-import { PATH_USER_DATABASE } from '../config/ConfigPath';
-import { Exception } from '../Exception/Exception';
+import { Controller } from './Controller.js';
+import { PATH_USER_DATABASE } from '../config/ConfigPath.js';
+import { Exception } from '../Exception/Exception.js';
 import { Request, Response } from "express"
 
 export class UserController extends Controller {
@@ -30,7 +30,7 @@ export class UserController extends Controller {
             this.validateParams();
             const user = await this.business.validateUser(this.data.name, this.data.password);
             console.log(user)
-            reson({ data: user });
+            res.json({ data: user });
 
         } catch (err) {
             if (err instanceof Exception)

@@ -1,4 +1,4 @@
-import { saveLog as functionSaveLog } from "../lib/Log";
+import { saveLog as functionSaveLog } from "../lib/Log.js";
 
 export class Exception extends Error {
     status = 400;

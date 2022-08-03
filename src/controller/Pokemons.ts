@@ -1,6 +1,6 @@
-import { ERROR_BAD_REQUEST, limitPokemonsPage } from '../config/Config';
-import { Controller } from './Controller';
-import { Exception } from '../Exception/Exception';
+import { ERROR_BAD_REQUEST, limitPokemonsPage } from '../config/Config.js';
+import { Controller } from './Controller.js';
+import { Exception } from '../Exception/Exception.js';
 import { Request, Response } from "express"
 
 export class PokemonsController extends Controller {
@@ -14,9 +14,10 @@ export class PokemonsController extends Controller {
             this.setData(req.query);
             const offset = this.business.getOffset(this.data.page, limitPokemonsPage);
             const pokemons = await this.business.getPokemons(offset);
-            res.status(200)on({ data: pokemons })
+            res.status(200).json({ data: pokemons })
         } catch (err) {
-            throw new Exception(ERROR_BAD_REQUEST, err.message, true);
+            if (err instanceof Exception)
+                throw new Exception(ERROR_BAD_REQUEST, err.message, true);
         }
     }
 
@@ -25,9 +26,9 @@ export class PokemonsController extends Controller {
             this.setData(req.params);
             this.validateParams();
             let pokemon = await this.business.getPokemonByName(this.data.name);
+            console.log(pokemon);
             if (pokemon.status == 200) {
-                pokemon = await pokemonon();
-                res.status(200)on({ data: pokemon });
+                res.status(200).json({ data: pokemon });
                 return;
             }
             res.status(400).send({ msg: `Pokemón não encontrado...` });

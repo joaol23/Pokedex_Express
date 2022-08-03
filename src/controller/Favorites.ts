@@ -1,7 +1,7 @@
-import { ERROR_BAD_REQUEST } from '../config/Config';
-import { Controller } from './Controller';
-import { PATH_FAVORITE_DATABASE } from '../config/ConfigPath';
-import { Exception } from '../Exception/Exception';
+import { ERROR_BAD_REQUEST } from '../config/Config.js';
+import { Controller } from './Controller.js';
+import { PATH_FAVORITE_DATABASE } from '../config/ConfigPath.js';
+import { Exception } from '../Exception/Exception.js';
 import { Request, Response } from "express"
 
 export class FavoritesController extends Controller {

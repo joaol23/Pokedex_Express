@@ -1,4 +1,4 @@
-import { putZeroBeforeNumber } from "./String";
+import { putZeroBeforeNumber } from "./String.js";
 
 export function getStringDate(separetor: string) {
     const date = new Date();
