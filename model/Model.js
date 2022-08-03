@@ -21,27 +21,16 @@ export class Model {
     }
 
     async getId(path){
-        try{
-            let data = await this.getData(path, true);
-            if(data.length < 1)
-            {
-                return 1
-            }
-            else{
-                let highestId = 0;
-                data.map((d)=>{
-                    if(d.id > highestId){
-                        highestId = d.id;
-                    }
-                })
+        let data = await this.getData(path, true);
+        console.log(data.length)
+        return data.length < 1 ? 1 : this.getNextIdFromData(data);
+    }
 
-                return highestId + 1
-            }
-
-        }
-        catch(error){
-            console.log(error)
-        }
+    getNextIdFromData(data){
+        console.log(data)
+        let highestId = Math.max(...data.map(eachData => eachData.id));
+        console.log(highestId)
+        return highestId + 1;
     }
     
     async getDataByUrl(url){
