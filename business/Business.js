@@ -14,6 +14,12 @@ export class Business {
         return ArrayData;
     }
 
+    async addIdToObject(data, path){
+        let id = await this.model.getId(path);        
+        data["id"] = id;
+        return data;
+    }
+
     async getData(path, isReturnArray) {
         return await this.model.getData(path, isReturnArray);
     }
