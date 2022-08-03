@@ -22,14 +22,11 @@ export class Model {
 
     async getId(path){
         let data = await this.getData(path, true);
-        console.log(data.length)
         return data.length < 1 ? 1 : this.getNextIdFromData(data);
     }
 
     getNextIdFromData(data){
-        console.log(data)
         let highestId = Math.max(...data.map(eachData => eachData.id));
-        console.log(highestId)
         return highestId + 1;
     }
     

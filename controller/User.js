@@ -1,6 +1,6 @@
 import { ERROR_BAD_REQUEST } from '../config/Config.js';
 import { Controller } from './Controller.js';
-import { PATH_USER_DATABASE, PATH_FAVORITE_DATABASE } from '../config/ConfigPath.js';
+import { PATH_USER_DATABASE} from '../config/ConfigPath.js';
 import { Exception } from '../Exception/Exception.js';
 
 export class UserController extends Controller {
