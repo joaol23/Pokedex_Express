@@ -26,7 +26,6 @@ export class PokemonsController extends Controller {
             this.setData(req.params);
             this.validateParams();
             let pokemon = await this.business.getPokemonByName(this.data.name);
-            console.log(pokemon);
             if (pokemon.status == 200) {
                 res.status(200).json({ data: pokemon });
                 return;

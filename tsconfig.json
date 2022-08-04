@@ -4,6 +4,12 @@
             "ESNext" /* ESNext includes new Level-4 features that were
                    recently added to the ECMA-262 JS spec */
         ],
+        "types": [
+          "node",
+          "node-fetch",
+          "express"
+        ],
+        "skipLibCheck": true,
         "esModuleInterop": true,
         "target": "ESNext",
         "module": "NodeNext",

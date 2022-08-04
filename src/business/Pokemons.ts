@@ -10,6 +10,7 @@ export class PokemonsBusiness extends Business {
     async getPokemons(offset: string) {
         let dataPokemons = await this.model.getDataByUrl(`${apiPokemonUrl}pokemon?limit=${limitPokemonsPage}&offset=${offset}`);
         if (dataPokemons.status == 200) {
+            dataPokemons = (await dataPokemons.json());
             dataPokemons = dataPokemons.results.map(async (pokemon: PokemonProps) => {
                 return await this.getEachPokemonInfo(pokemon)
             })
