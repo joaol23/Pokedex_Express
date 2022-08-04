@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "ESNext" /* ESNext includes new Level-4 features that were
+                   recently added to the ECMA-262 JS spec */
+        ],
+        "types": [
+          "node",
+          "node-fetch",
+          "express"
+        ],
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "target": "esnext",
+        "module": "esnext",
+        "noFallthroughCasesInSwitch": true,
+        "isolatedModules": false,
+        "noImplicitThis": false,
+        "noImplicitAny": true,
+        "inlineSourceMap": true,
+        "moduleResolution": "node",
+        "rootDir": "./src",
+        "baseUrl": "./src",
+        "outDir": "./dist",
+        "forceConsistentCasingInFileNames": true,
+        "strict": false,
+        "paths": {
+            "crypto": [
+                "./node_modules/crypto-js"
+            ]
+        }
+    },
+    "ts-node": {
+        "esm": true
+    },
+    "lib": [
+        "esnext"
+    ],
+    "exclude": [
+        "node_modules",
+        "lib",
+        "tests"
+    ]
+}

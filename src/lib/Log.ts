@@ -5,10 +5,10 @@ import { getStringDate } from "./Date.js";
 
 const { combine, printf, label, timestamp } = winston.format;
 
-function createLogger(filename, dirname) {
+function createLogger(filename: string, dirname: string) {
     return winston.createLogger({
         transports: [
-            new (winston.transports.Console)({format: winston.format.simple()}),
+            new (winston.transports.Console)({ format: winston.format.simple() }),
             new (winston.transports.File)({ filename: filename + '.log', dirname: 'log/' + dirname })
         ],
         format: combine(
@@ -19,9 +19,9 @@ function createLogger(filename, dirname) {
     });
 }
 
-export function saveLog(text, dirname = '', level = 'info', isDebug = false) {
+export function saveLog(text: string, dirname = '', level = 'info', isDebug = false) {
     if (!text) {
-        throw new Exception("Texto de log não definido pasta -> " + dirname + ". backtrace : " + new this().stack)
+        throw new Exception(500, "Texto de log não definido pasta -> " + dirname + ". backtrace : " + new this().stack, false)
     }
 
     text = isDebug ? text + ". backtrace :\n " + new Error().stack : text
