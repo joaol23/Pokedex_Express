@@ -15,7 +15,17 @@ export class Business {
         return ArrayData;
     }
 
+<<<<<<< HEAD:src/business/Business.ts
     async getData(path: string, isReturnArray: boolean) {
+=======
+    async addIdToObject(data, path){
+        let id = await this.model.getId(path);        
+        data["id"] = id;
+        return data;
+    }
+
+    async getData(path, isReturnArray) {
+>>>>>>> 5c91093a2d48ca7d716899e199b3158a1cd5d572:business/Business.js
         return await this.model.getData(path, isReturnArray);
     }
 

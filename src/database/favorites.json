@@ -1,6 +1,9 @@
+<<<<<<< HEAD:src/database/favorites.json
 [
     {
         "user_id": "3",
         "poke_id": 4
     }
 ]
+=======
+>>>>>>> 5c91093a2d48ca7d716899e199b3158a1cd5d572:database/favorites.json

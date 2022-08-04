@@ -20,7 +20,21 @@ export class Model {
         return await fs.appendFileSync(path, JSON.stringify(data, null, 4));
     }
 
+<<<<<<< HEAD:src/model/Model.ts
     async getDataByUrl(url: string) {
+=======
+    async getId(path){
+        let data = await this.getData(path, true);
+        return data.length < 1 ? 1 : this.getNextIdFromData(data);
+    }
+
+    getNextIdFromData(data){
+        let highestId = Math.max(...data.map(eachData => eachData.id));
+        return highestId + 1;
+    }
+    
+    async getDataByUrl(url){
+>>>>>>> 5c91093a2d48ca7d716899e199b3158a1cd5d572:model/Model.js
         return await fetch(url);
     }
 }

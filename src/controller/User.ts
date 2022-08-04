@@ -1,5 +1,5 @@
 import { Controller } from './Controller.js';
-import { PATH_USER_DATABASE } from '../config/ConfigPath.js';
+import { PATH_USER_DATABASE} from '../config/ConfigPath.js';
 import { Exception } from '../Exception/Exception.js';
 import { Request, Response } from "express"
 
@@ -15,7 +15,8 @@ export class UserController extends Controller {
             this.validateParams();
             const users = await this.business.getData(PATH_USER_DATABASE, true);
             const dataCrypto = this.business.cryptoPassword(this.data);
-            const newUsers = this.business.addDataToArray(dataCrypto, users)
+            this.data = await this.business.addIdToObject(this.data, PATH_USER_DATABASE);
+            const newUsers = this.business.addDataToArray(dataCrypto, users, PATH_USER_DATABASE)
             await this.business.insertData(PATH_USER_DATABASE, newUsers, true);
             res.status(200).send('Usuário criado com sucesso!');
         } catch (err) {
