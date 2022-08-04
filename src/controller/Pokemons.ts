@@ -27,11 +27,12 @@ export class PokemonsController extends Controller {
             this.validateParams();
             let pokemon = await this.business.getPokemonByName(this.data.name);
             if (pokemon.status == 200) {
+                pokemon = await pokemon.json();
                 res.status(200).json({ data: pokemon });
                 return;
             }
             res.status(400).send({ msg: `Pokemón não encontrado...` });
-        } catch (err) {            
+        } catch (err) {
             if (err instanceof Exception)
                 throw new Exception(ERROR_BAD_REQUEST, err.message, true);
         }

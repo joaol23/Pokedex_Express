@@ -26,6 +26,6 @@ export class PokemonsBusiness extends Business {
     }
 
     async getPokemonByName(name: string) {
-        return await (await this.model.getDataByUrl(`${apiPokemonUrl}pokemon/${name}`)).json();
+        return await this.model.getDataByUrl(`${apiPokemonUrl}pokemon/${name}`);
     }
 }

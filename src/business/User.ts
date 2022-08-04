@@ -1,5 +1,5 @@
 import { CONFIG_ENCRYPT } from '../config/Config.js';
-import CryptoJS from "crypto";
+import CryptoJS, { createHmac } from "crypto";
 import { Business } from './Business.js';
 import { PATH_USER_DATABASE } from '../config/ConfigPath.js';
 import { Exception } from '../Exception/Exception.js';
@@ -11,7 +11,7 @@ export class UserBusiness extends Business {
     }
 
     cryptoPassword(data: UserProps) {
-        data.password = (CryptoJS as any).AES.encrypt(data.password, CONFIG_ENCRYPT).toString();
+        data.password = this.encryptPassword(data.password.toString())
         return data;
     }
 
@@ -19,8 +19,7 @@ export class UserBusiness extends Business {
         const users = await super.getData(PATH_USER_DATABASE, true);
         let userSearch = this.getUsersByName(name, users);
         if (userSearch) {
-            let originalPassword = this.decryptPassword(userSearch.password);
-            if (password == originalPassword) {
+            if (this.encryptPassword(password.toString()) == userSearch.password) {
                 return userSearch
             }
         }
@@ -31,8 +30,9 @@ export class UserBusiness extends Business {
         return users.find(usersLogin => usersLogin.name == name)
     }
 
-    decryptPassword(password: string) {
-        let passwordDecrypt = (CryptoJS as any).AES.decrypt(password, CONFIG_ENCRYPT);
-        return passwordDecrypt.toString((CryptoJS as any).enc.Utf8);
+    encryptPassword(password: string) {
+        return createHmac('sha256', CONFIG_ENCRYPT)
+            .update(password)
+            .digest('hex');
     }
 }

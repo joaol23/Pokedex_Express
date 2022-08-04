@@ -30,9 +30,7 @@ export class UserController extends Controller {
             this.setData(req.body);
             this.validateParams();
             const user = await this.business.validateUser(this.data.name, this.data.password);
-            console.log(user)
             res.json({ data: user });
-
         } catch (err) {
             if (err instanceof Exception)
                 throw new Exception(err.status, err.message, true);

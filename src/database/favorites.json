@@ -1,9 +1,12 @@
-<<<<<<< HEAD:src/database/favorites.json
 [
     {
-        "user_id": "3",
-        "poke_id": 4
+        "user_id": "teste",
+        "poke_id": 3,
+        "id": 1
+    },
+    {
+        "user_id": "teste",
+        "poke_id": 3,
+        "id": 2
     }
 ]
-=======
->>>>>>> 5c91093a2d48ca7d716899e199b3158a1cd5d572:database/favorites.json

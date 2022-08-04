@@ -8,6 +8,7 @@ export class Exception extends Error {
         super(message);
 
         this.status = status;
+        this.message = message;
 
         Object.setPrototypeOf(this, Exception.prototype);
         if (saveLog) {

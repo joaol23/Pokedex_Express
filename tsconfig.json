@@ -11,24 +11,22 @@
         ],
         "skipLibCheck": true,
         "esModuleInterop": true,
-        "target": "ESNext",
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
+        "target": "esnext",
+        "module": "esnext",
         "noFallthroughCasesInSwitch": true,
         "isolatedModules": false,
         "noImplicitThis": false,
         "noImplicitAny": true,
         "inlineSourceMap": true,
+        "moduleResolution": "node",
         "rootDir": "./src",
+        "baseUrl": "./src",
         "outDir": "./dist",
         "forceConsistentCasingInFileNames": true,
-        "strict": true,
+        "strict": false,
         "paths": {
             "crypto": [
                 "./node_modules/crypto-js"
-            ],
-            "winston": [
-                "./node_modules/winston"
             ]
         }
     },
