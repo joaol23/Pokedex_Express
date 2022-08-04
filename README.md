@@ -37,3 +37,14 @@
 | :---------- | :--------- | :------------------------------------------ |
 | `name`      | `string` | **Obrigatório**. O nome do seu usuário |
 | `password`      | `string` | **Obrigatório**. A senha do seu usuário |
+
+
+#### Favoritar pokemon
+
+```http
+  POST /api/favorite
+```
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `user_id`      | `string` | **Obrigatório**. O ID do usuário |
+| `poke_id`      | `string` | **Obrigatório**. A ID do pokemon |
