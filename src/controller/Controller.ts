@@ -27,7 +27,7 @@ export class Controller {
             return true;
         }       
 
-        const check = this.require.filter(field => {!this.data.hasOwnProperty(field);})
+        const check = this.require.filter(field => !this.data.hasOwnProperty(field))
         if (check.length > 0) {
             const msgError = `Parâmetros necessários não encontrados: ${check.join(', ')}`;
             throw new Exception(400, msgError, false);
