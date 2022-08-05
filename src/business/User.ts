@@ -35,4 +35,14 @@ export class UserBusiness extends Business {
             .update(password)
             .digest('hex');
     }
+
+    getUsersWithoutId(users: UserProps[], id: string) {
+        return users.filter(user => user.id != id);
+    }
+
+    async deleteUser(id: string) {
+        const users = await super.getData(PATH_USER_DATABASE, true);
+        const newUsers = this.getUsersWithoutId(users, id);
+        return await super.insertData(PATH_USER_DATABASE, newUsers, true)
+    }
 }

@@ -2,9 +2,6 @@ import { PokemonsController } from '../controller/Pokemons.js';
 import express, { Request, Response } from "express"
 import { Exception } from '../Exception/Exception.js';
 const PokemonsObj = new PokemonsController();
-// export const routes = [
-//     { method: "get", path: '/pokemon', url: `${apiPokemonUrl}pokemon?limit=${limitPokemonsPage}&offset=0` }
-// ]
 
 export function routePokemon(app: express.Application) {
     app.get("/api/pokemons", async (req: Request, res: Response) => {

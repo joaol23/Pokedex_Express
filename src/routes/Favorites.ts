@@ -1,7 +1,6 @@
 import { FavoritesController } from "../controller/Favorites.js";
 import express, { Request, Response } from "express"
 import { Exception } from "../Exception/Exception.js";
-
 const FavoritesObj = new FavoritesController()
 
 export function routeFavorite(app: express.Application) {

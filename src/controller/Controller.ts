@@ -1,9 +1,11 @@
 import { Exception } from "../Exception/Exception.js";
+import { Request } from "express"
 
 export class Controller {
     business: any;
     data: any;
     require: Array<string>;
+    requireMain: Array<string>;
 
     constructor() {
         const controllerClass = this.constructor.name;
@@ -14,7 +16,7 @@ export class Controller {
         this.data = [];
         this.require = [];
         import(`../business/${nameFile}.js`).then(response => {
-            this.business = new response[business];
+            this.business = new response[business]();
         });
     }
 
@@ -25,7 +27,7 @@ export class Controller {
     validateParams() {
         if (!this.require) {
             return true;
-        }       
+        }
 
         const check = this.require.filter(field => !this.data.hasOwnProperty(field))
         if (check.length > 0) {
@@ -33,5 +35,15 @@ export class Controller {
             throw new Exception(400, msgError, false);
         }
         return true;
+    }
+
+    setRequire() {
+        this.require = this.requireMain;
+    }
+
+    firtStepsController(req: Request) {
+        this.setData(req.body);
+        this.setRequire();
+        this.validateParams();
     }
 }
