@@ -6,34 +6,56 @@ const fetch = require('node-fetch');
 
 export class Model {
     async getData(path: string, isReturnArray: boolean) {
-        // console.log(fs.readFile(path, (data) => { }))
-        let data = await fs.readFileSync(path);
-        if (isReturnArray) {
-            return (data.length == 0) ? [] : (await JSON.parse(data.toString()));
-        }
+        try {
+            let data = await fs.readFileSync(path);
+            if (isReturnArray) {
+                return (data.length == 0) ? [] : (await JSON.parse(data.toString()));
+            }
 
-        return (data.length == 0) ? {} : (await JSON.parse(data.toString()));
+            return (data.length == 0) ? {} : (await JSON.parse(data.toString()));
+        } catch (err) {
+            console.log(err)
+        }
     }
 
     async insertData(path: string, data: any, reWriteFile = false) {
-        if (reWriteFile) {
-            return await fs.writeFileSync(path, JSON.stringify(data, null, 4));
-        }
+        try {
+            if (reWriteFile) {
+                return await fs.writeFileSync(path, JSON.stringify(data, null, 4));
+            }
 
-        return await fs.appendFileSync(path, JSON.stringify(data, null, 4));
+            return await fs.appendFileSync(path, JSON.stringify(data, null, 4));
+        } catch (err) {
+            console.log(err)
+        }
     }
 
     async getId(path: string) {
-        let data = await this.getData(path, true);
-        return data.length < 1 ? 1 : this.getNextIdFromData(data);
+        try {
+            let data = await this.getData(path, true);
+            return data.length < 1 ? 1 : this.getNextIdFromData(data);
+        }
+        catch (err) {
+            console.log(err)
+        }
     }
 
     getNextIdFromData(data: any) {
-        let highestId = Math.max(...data.map((eachData: { id: Number }) => eachData.id));
-        return highestId + 1;
+        try {
+            let highestId = Math.max(...data.map((eachData: { id: Number }) => eachData.id));
+            return highestId + 1;
+        }
+        catch (err) {
+            console.log(err)
+        }
     }
 
     async getDataByUrl(url: string) {
-        return await fetch(url);
+        try {
+            return await fetch(url);
+        }
+        catch (err) {
+            console.log(err)
+        }
     }
 }
