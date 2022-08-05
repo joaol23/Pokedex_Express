@@ -18,5 +18,10 @@
         "user_id": "teste",
         "poke_id": 3,
         "id": 4
+    },
+    {
+        "user_id": "teste",
+        "poke_id": 3,
+        "id": 5
     }
 ]

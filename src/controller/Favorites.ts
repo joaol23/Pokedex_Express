@@ -23,6 +23,8 @@ export class FavoritesController extends Controller {
         } catch (err) {
             if (err instanceof Exception)
                 throw new Exception(ERROR_BAD_REQUEST, err.message, true);
+            else
+                console.log(err)
         }
     }
 }
