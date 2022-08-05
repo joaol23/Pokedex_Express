@@ -26,4 +26,23 @@ export class FavoritesController extends Controller {
                 console.log(err)
         }
     }
+
+    async deleteFavorite(req: Request, res: Response) {
+        try {
+            this.setData(req.body);
+            this.setRequireDelete();
+            this.validateParams();
+            await this.business.deleteFavorite(this.data.id.toString());
+            res.status(200).send('Favorito excluído com sucesso!');
+        } catch (err) {
+            if (err instanceof Exception)
+                throw new Exception(err.status, err.message, true);
+            else
+                console.log(err)
+        }
+    }
+
+    setRequireDelete() {
+        this.require = ['id']
+    }
 }

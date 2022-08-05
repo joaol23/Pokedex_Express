@@ -14,4 +14,12 @@ export function routeFavorite(app: express.Application) {
                     res.status(err.status).send({ msg: err.message });
             }
         })
+        .delete(async (req: Request, res: Response) => {
+            try {
+                await FavoritesObj.deleteFavorite(req, res)
+            } catch (err) {
+                if (err instanceof Exception)
+                    res.status(err.status).send({ msg: err.message });
+            }
+        })
 }
