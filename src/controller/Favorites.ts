@@ -13,8 +13,7 @@ export class FavoritesController extends Controller {
 
     async createFavorite(req: Request, res: Response) {
         try {
-            this.setData(req.body);
-            this.validateParams();
+            this.firtStepsController(req);
             const favorites = await this.business.getData(PATH_FAVORITE_DATABASE, true);
             this.data = await this.business.addIdToObject(this.data, PATH_FAVORITE_DATABASE);
             this.data = this.business.addDataToArray(this.data, favorites)
