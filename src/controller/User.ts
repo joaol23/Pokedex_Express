@@ -1,5 +1,5 @@
 import { Controller } from './Controller.js';
-import { PATH_USER_DATABASE} from '../config/ConfigPath.js';
+import { PATH_USER_DATABASE } from '../config/ConfigPath.js';
 import { Exception } from '../Exception/Exception.js';
 import { Request, Response } from "express"
 
@@ -22,6 +22,8 @@ export class UserController extends Controller {
         } catch (err) {
             if (err instanceof Exception)
                 throw new Exception(err.status, err.message, true);
+            else
+                console.log(err)
         }
     }
 
@@ -34,6 +36,8 @@ export class UserController extends Controller {
         } catch (err) {
             if (err instanceof Exception)
                 throw new Exception(err.status, err.message, true);
+            else
+                console.log(err)
         }
     }
 }
