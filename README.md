@@ -16,7 +16,6 @@
 | :---------- | :--------- | :------------------------------------------ |
 | `name`      | `string` | **Obrigatório**. O nome do pokemon que você quer |
 
-
 #### Cria um usuário
 
 ```http
@@ -26,7 +25,6 @@
 | :---------- | :--------- | :------------------------------------------ |
 | `name`      | `string` | **Obrigatório**. O nome do seu usuário |
 | `password`      | `string` | **Obrigatório**. A senha do seu usuário |
-
 
 #### Verificação de usuário
 
@@ -38,6 +36,14 @@
 | `name`      | `string` | **Obrigatório**. O nome do seu usuário |
 | `password`      | `string` | **Obrigatório**. A senha do seu usuário |
 
+#### Deletar de usuário
+
+```http
+  DELETE /api/login
+```
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` | **Obrigatório**. O ID do usuário para deletar |
 
 #### Favoritar pokemon
 
