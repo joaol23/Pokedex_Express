@@ -5,7 +5,7 @@ import { Exception } from '../Exception/Exception.js';
 import { Request, Response } from "express"
 
 export class FavoritesController extends Controller {
-    require = ['user_id', 'poke_id'];
+    requireMain = ['user_id', 'poke_id'];
 
     constructor() {
         super();
