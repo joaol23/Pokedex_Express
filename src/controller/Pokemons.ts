@@ -4,7 +4,7 @@ import { Exception } from '../Exception/Exception.js';
 import { Request, Response } from "express"
 
 export class PokemonsController extends Controller {
-    require = ['name'];
+    requireMain = ['name'];
     constructor() {
         super()
     }
@@ -25,8 +25,7 @@ export class PokemonsController extends Controller {
 
     async getPokemon(req: Request, res: Response) {
         try {
-            this.setData(req.params);
-            this.validateParams();
+            this.firtStepsController(req);
             let pokemon = await this.business.getPokemonByName(this.data.name);
             if (pokemon.status == 200) {
                 pokemon = await pokemon.json();
