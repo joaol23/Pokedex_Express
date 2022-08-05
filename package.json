@@ -23,7 +23,6 @@
     "@types/crypto-js": "^4.1.1",
     "cjs": "^0.0.11",
     "crypto-js": "^4.1.1",
-    "ejs": "^3.1.8",
     "express": "^4.18.1",
     "node-fetch": "^2.6.2",
     "winston": "^3.8.1"
