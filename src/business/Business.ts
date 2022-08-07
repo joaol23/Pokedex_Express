@@ -6,7 +6,8 @@ export class Business {
         const nameFile = businessClass.replace('Business', '');
 
         import(`../model/${nameFile}.js`).then(response => {
-            this.model = new response[model];
+            new response[model]();
+            this.model = new response[model]();
         });
     }
 

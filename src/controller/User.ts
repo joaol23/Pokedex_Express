@@ -22,7 +22,7 @@ export class UserController extends Controller {
             if (err instanceof Exception)
                 throw new Exception(err.status, err.message, true);
             else
-                console.log(err)
+                throw new Error(err)
         }
     }
 
@@ -35,7 +35,7 @@ export class UserController extends Controller {
             if (err instanceof Exception)
                 throw new Exception(err.status, err.message, true);
             else
-                console.log(err)
+                throw new Error(err)
         }
     }
 
@@ -50,7 +50,7 @@ export class UserController extends Controller {
             if (err instanceof Exception)
                 throw new Exception(err.status, err.message, true);
             else
-                console.log(err)
+                throw new Error(err)
         }
     }
 

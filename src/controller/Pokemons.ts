@@ -19,13 +19,14 @@ export class PokemonsController extends Controller {
             if (err instanceof Exception)
                 throw new Exception(ERROR_BAD_REQUEST, err.message, true);
             else
-                console.log(err)
+                throw new Error(err)
         }
     }
 
     async getPokemon(req: Request, res: Response) {
         try {
-            this.firtStepsController(req);
+            this.setData(req.params);
+            this.validateParams();
             let pokemon = await this.business.getPokemonByName(this.data.name);
             if (pokemon.status == 200) {
                 pokemon = await pokemon.json();
@@ -37,7 +38,7 @@ export class PokemonsController extends Controller {
             if (err instanceof Exception)
                 throw new Exception(ERROR_BAD_REQUEST, err.message, true);
             else
-                console.log(err)
+                throw new Error(err)
         }
     }
 }

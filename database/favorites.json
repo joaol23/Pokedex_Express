@@ -2,11 +2,6 @@
     {
         "user_id": "teste",
         "poke_id": 3,
-        "id": 2
-    },
-    {
-        "user_id": "teste",
-        "poke_id": 3,
         "id": 3
     },
     {
@@ -18,5 +13,10 @@
         "user_id": "teste",
         "poke_id": 3,
         "id": 5
+    },
+    {
+        "user_id": 3,
+        "poke_id": 3,
+        "id": 6
     }
 ]

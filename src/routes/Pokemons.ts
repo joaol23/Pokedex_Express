@@ -1,6 +1,7 @@
 import { PokemonsController } from '../controller/Pokemons.js';
 import express, { Request, Response } from "express"
 import { Exception } from '../Exception/Exception.js';
+import { setErrorInternal } from './Route.js';
 const PokemonsObj = new PokemonsController();
 
 export function routePokemon(app: express.Application) {
@@ -10,6 +11,8 @@ export function routePokemon(app: express.Application) {
         } catch (err) {
             if (err instanceof Exception)
                 res.status(err.status).send({ msg: err.message });
+            console.log(err)
+            setErrorInternal(res);
         }
     })
 
@@ -19,6 +22,8 @@ export function routePokemon(app: express.Application) {
         } catch (err) {
             if (err instanceof Exception)
                 res.status(err.status).send({ msg: err.message });
+            console.log(err)
+            setErrorInternal(res);
         }
     })
 }
