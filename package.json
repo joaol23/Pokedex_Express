@@ -4,8 +4,8 @@
   "description": "Projeto Express Site Pokedex",
   "main": "./src/app.js",
   "scripts": {
-    "build": "nodemon --watch src src/app.ts",
-    "start": "nodemon --watch src src/app.ts",
+    "build": "tsc",
+    "start": "ts-node dist/app.js",
     "home": "nodemon --watch src src/app.ts",
     "dev": "ts-node src/app.ts"
   },
