@@ -16,8 +16,8 @@ export class Business {
         return ArrayData;
     }
 
-    async addIdToObject(data: any, path: string){
-        let id = await this.model.getId(path);        
+    async addIdToObject(data: any, path: string) {
+        let id = await this.model.getId(path);
         data["id"] = id;
         return data;
     }
@@ -28,6 +28,10 @@ export class Business {
 
     async insertData(path: string, data: any, reWriteFile: boolean) {
         return await this.model.insertData(path, data, reWriteFile)
+    }
+
+    getDataByParameter(parameter: string, data: Array<any>, valueParameter: string | number) {
+        return data.filter(eachData => eachData[parameter] == valueParameter);
     }
 
     getOffset(page: number, limit: number) {

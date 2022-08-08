@@ -13,8 +13,8 @@ export function routeFavorite(app: express.Application) {
             catch (err) {
                 if (err instanceof Exception)
                     res.status(err.status).send({ msg: err.message });
-                console.log(err)
-                setErrorInternal(res);
+                else
+                    setErrorInternal(res, err);
             }
         })
         .delete(async (req: Request, res: Response) => {
@@ -23,8 +23,18 @@ export function routeFavorite(app: express.Application) {
             } catch (err) {
                 if (err instanceof Exception)
                     res.status(err.status).send({ msg: err.message });
-                console.log(err)
-                setErrorInternal(res);
+                else
+                    setErrorInternal(res, err);
+            }
+        })
+        .get(async (req: Request, res: Response) => {
+            try {
+                await FavoritesObj.listFavorites(req, res)
+            } catch (err) {
+                if (err instanceof Exception)
+                    res.status(err.status).send({ msg: err.message });
+                else
+                    setErrorInternal(res, err);
             }
         })
 }

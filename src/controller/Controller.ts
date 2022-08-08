@@ -16,7 +16,6 @@ export class Controller {
         this.data = [];
         this.require = [];
         import(`../business/${nameFile}.js`).then(response => {
-            console.log(new response[business]())
             new response[business]();
             this.business = new response[business]();
         });

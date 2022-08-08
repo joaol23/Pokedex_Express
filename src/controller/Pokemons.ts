@@ -17,7 +17,7 @@ export class PokemonsController extends Controller {
             res.status(200).json({ data: pokemons })
         } catch (err) {
             if (err instanceof Exception)
-                throw new Exception(ERROR_BAD_REQUEST, err.message, true);
+                throw new Exception(err.status, err.message, err.saveLog);
             else
                 throw new Error(err)
         }
@@ -36,7 +36,7 @@ export class PokemonsController extends Controller {
             res.status(400).send({ msg: `Pokemón não encontrado...` });
         } catch (err) {
             if (err instanceof Exception)
-                throw new Exception(ERROR_BAD_REQUEST, err.message, true);
+                throw new Exception(err.status, err.message, err.saveLog);
             else
                 throw new Error(err)
         }

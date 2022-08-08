@@ -11,8 +11,8 @@ export function routePokemon(app: express.Application) {
         } catch (err) {
             if (err instanceof Exception)
                 res.status(err.status).send({ msg: err.message });
-            console.log(err)
-            setErrorInternal(res);
+            else
+                setErrorInternal(res, err);
         }
     })
 
@@ -22,8 +22,8 @@ export function routePokemon(app: express.Application) {
         } catch (err) {
             if (err instanceof Exception)
                 res.status(err.status).send({ msg: err.message });
-            console.log(err)
-            setErrorInternal(res);
+            else
+                setErrorInternal(res, err);
         }
     })
 }

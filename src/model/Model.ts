@@ -58,8 +58,4 @@ export class Model {
             console.log(err)
         }
     }
-
-    async deleteDataById(id: number) {
-
-    }
 }

@@ -20,7 +20,7 @@ export class UserController extends Controller {
             res.status(200).send('Usuário criado com sucesso!');
         } catch (err) {
             if (err instanceof Exception)
-                throw new Exception(err.status, err.message, true);
+                throw new Exception(err.status, err.message, err.saveLog);
             else
                 throw new Error(err)
         }
@@ -33,7 +33,7 @@ export class UserController extends Controller {
             res.json({ data: user });
         } catch (err) {
             if (err instanceof Exception)
-                throw new Exception(err.status, err.message, true);
+                throw new Exception(err.status, err.message, err.saveLog);
             else
                 throw new Error(err)
         }
@@ -48,7 +48,7 @@ export class UserController extends Controller {
             res.status(200).send('Usuário excluído com sucesso!');
         } catch (err) {
             if (err instanceof Exception)
-                throw new Exception(err.status, err.message, true);
+                throw new Exception(err.status, err.message, err.saveLog);
             else
                 throw new Error(err)
         }
