@@ -50,6 +50,15 @@
 | :---------- | :--------- | :------------------------------------------ |
 | `id`      | `string` | **Obrigatório**. O ID do usuário para deletar |
 
+#### Listar Favoritos
+
+```http
+  GET api/favorite?id={id}
+```
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` | **Obrigatório**. O ID do usuário |
+
 #### Favoritar pokemon
 
 ```http
@@ -59,3 +68,12 @@
 | :---------- | :--------- | :------------------------------------------ |
 | `user_id`      | `string` | **Obrigatório**. O ID do usuário |
 | `poke_id`      | `string` | **Obrigatório**. A ID do pokemon |
+
+#### Deletar Favorito
+
+```http
+  DELETE api/favorite
+```
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` | **Obrigatório**. O ID do dado |
