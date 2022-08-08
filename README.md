@@ -6,6 +6,7 @@
 
 ## Documentação da API
 
+## Pokemons
 #### Retorna todos os pokemons
 
 ```http
@@ -21,6 +22,7 @@
 | :---------- | :--------- | :------------------------------------------ |
 | `name`      | `string` | **Obrigatório**. O nome do pokemon que você quer |
 
+## Usuários
 #### Cria um usuário
 
 ```http
@@ -50,6 +52,7 @@
 | :---------- | :--------- | :------------------------------------------ |
 | `id`      | `string` | **Obrigatório**. O ID do usuário para deletar |
 
+## Favoritos
 #### Listar Favoritos
 
 ```http
