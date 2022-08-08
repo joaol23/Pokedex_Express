@@ -1,15 +1,20 @@
+## Url Api Online
+
+```
+  https://api-cotemig-project.herokuapp.com/
+```
 
 ## Documentação da API
 
 #### Retorna todos os pokemons
 
 ```http
-  GET /api/pokemons
+  GET api/pokemons
 ```
 #### Retorna um pokemon específico
 
 ```http
-  GET /api/pokemon/${name}
+  GET api/pokemon/${name}
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
@@ -19,7 +24,7 @@
 #### Cria um usuário
 
 ```http
-  POST /api/create-user
+  POST api/create-user
 ```
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -29,7 +34,7 @@
 #### Verificação de usuário
 
 ```http
-  POST /api/login
+  POST api/login
 ```
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -39,7 +44,7 @@
 #### Deletar de usuário
 
 ```http
-  DELETE /api/login
+  DELETE api/login
 ```
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -48,7 +53,7 @@
 #### Favoritar pokemon
 
 ```http
-  POST /api/favorite
+  POST api/favorite
 ```
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
