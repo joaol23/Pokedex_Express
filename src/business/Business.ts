@@ -30,13 +30,30 @@ export class Business {
         return await this.model.insertData(path, data, reWriteFile)
     }
 
-    getDataByParameter(parameter: string, data: Array<any>, valueParameter: string | number) {
+    getDataByParameter(parameter: string, data: Array<any>, valueParameter: string | number, singleItem = false) {
+        if (singleItem) {
+            return data.find(eachData => eachData[parameter] == valueParameter);
+        }
+
         return data.filter(eachData => eachData[parameter] == valueParameter);
+    }
+
+    getIndexDataByParameter(parameter: string, data: Array<any>, valueParameter: string | number) {
+        return data.findIndex(eachData => eachData[parameter] == valueParameter);
     }
 
     getOffset(page: number, limit: number) {
         page = page || 1;
         const offSetPage = (page - 1) * limit;
         return offSetPage;
+    }
+
+    updateData(data: Array<any>, newData: any, index: number) {
+        Object.keys(newData).map((eachValue: string) => {
+            if (data[index].hasOwnProperty(eachValue)) {
+                data[index][eachValue] = newData[eachValue];
+            }
+        })
+        return data;
     }
 }

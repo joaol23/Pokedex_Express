@@ -1,4 +1,4 @@
-import { CONFIG_ENCRYPT } from '../config/Config.js';
+import { CONFIG_ENCRYPT, UNAUTHORIZED_REQUEST, NOT_FOUND } from '../config/Config.js';
 import CryptoJS, { createHmac } from "crypto";
 import { Business } from './Business.js';
 import { PATH_USER_DATABASE } from '../config/ConfigPath.js';
@@ -23,7 +23,7 @@ export class UserBusiness extends Business {
                 return userSearch
             }
         }
-        throw new Exception(401, "Não foi possivel encontrar um usuario com essa senha, por favor tente novamente", false);
+        throw new Exception(UNAUTHORIZED_REQUEST, "Não foi possivel encontrar um usuario com essa senha, por favor tente novamente", false);
     }
 
     getUsersByName(name: string, users: UserProps[]) {
@@ -44,5 +44,31 @@ export class UserBusiness extends Business {
         const users = await super.getData(PATH_USER_DATABASE, true);
         const newUsers = this.getUsersWithoutId(users, id);
         return await super.insertData(PATH_USER_DATABASE, newUsers, true)
+    }
+
+    canChangePasswordUser(oldPassword: string, selectedUser: UserProps) {
+        if (oldPassword == "" || oldPassword == null) {
+            throw new Exception(UNAUTHORIZED_REQUEST, "Não é possível atualizar a senha sem verificação", false);
+        }
+        if (this.encryptPassword(oldPassword) == selectedUser.password) {
+            return true;
+        }
+        throw new Exception(UNAUTHORIZED_REQUEST, "Senha passada está incorreta", false);
+    }
+
+    async updateUser(id: string, newUser: UserProps, oldPassword = '') {
+        const users = await super.getData(PATH_USER_DATABASE, true);
+        const indexUserSelected = super.getIndexDataByParameter('id', users, id);
+        if (indexUserSelected == -1){
+            throw new Exception(NOT_FOUND, "Usuário não encontrado", false);
+        }
+
+        if (newUser.hasOwnProperty('password')) {
+            this.canChangePasswordUser(oldPassword.toString(), users[indexUserSelected]);
+            newUser = this.cryptoPassword(newUser);
+        }
+        const newUsers = super.updateData(users, newUser, indexUserSelected);
+        await super.insertData(PATH_USER_DATABASE, newUsers, true);
+        return newUsers[indexUserSelected];
     }
 }

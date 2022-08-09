@@ -17,7 +17,7 @@ export class UserController extends Controller {
             this.data = await this.business.addIdToObject(this.data, PATH_USER_DATABASE);
             const newUsers = this.business.addDataToArray(dataCrypto, users, PATH_USER_DATABASE)
             await this.business.insertData(PATH_USER_DATABASE, newUsers, true);
-            res.status(200).send('Usuário criado com sucesso!');
+            res.status(200).json({ data: this.data });
         } catch (err) {
             if (err instanceof Exception)
                 throw new Exception(err.status, err.message, err.saveLog);
@@ -54,7 +54,26 @@ export class UserController extends Controller {
         }
     }
 
+    async updateUser(req: Request, res: Response) {
+        try {
+            this.setData(req.body);
+            this.setRequireUpdate();
+            this.validateParams();
+            const newUser = await this.business.updateUser(this.data.id.toString(), this.data.newUser, this.data.oldPassword);
+            res.status(200).json({ data: newUser });
+        } catch (err) {
+            if (err instanceof Exception)
+                throw new Exception(err.status, err.message, err.saveLog);
+            else
+                throw new Error(err)
+        }
+    }
+
     setRequireDelete() {
         this.require = ['id']
+    }
+
+    setRequireUpdate() {
+        this.require = ['id', 'newUser']
     }
 }

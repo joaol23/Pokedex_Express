@@ -14,7 +14,7 @@ export class Model {
 
             return (data.length == 0) ? {} : (await JSON.parse(data.toString()));
         } catch (err) {
-            console.log(err)
+            throw new Error(err)
         }
     }
 
@@ -26,7 +26,7 @@ export class Model {
 
             return await fs.appendFileSync(path, JSON.stringify(data, null, 4));
         } catch (err) {
-            console.log(err)
+            throw new Error(err)
         }
     }
 
@@ -36,7 +36,7 @@ export class Model {
             return data.length < 1 ? 1 : this.getNextIdFromData(data);
         }
         catch (err) {
-            console.log(err)
+            throw new Error(err)
         }
     }
 
@@ -46,7 +46,7 @@ export class Model {
             return highestId + 1;
         }
         catch (err) {
-            console.log(err)
+            throw new Error(err)
         }
     }
 
@@ -55,7 +55,7 @@ export class Model {
             return await fetch(url);
         }
         catch (err) {
-            console.log(err)
+            throw new Error(err)
         }
     }
 }

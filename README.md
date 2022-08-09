@@ -43,6 +43,19 @@
 | `name`      | `string` | **Obrigatório**. O nome do seu usuário |
 | `password`      | `string` | **Obrigatório**. A senha do seu usuário |
 
+#### Atualizar usuário
+
+```http
+  PUT api/login
+```
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` |  **Obrigatório**. O ID do usuário para atualizar |
+| `newUser`      | `object` |  **Obrigatório**. O objeto que irá conter os novos dados |
+| `newUser.name`      | `string` | O nome do seu usuário |
+| `newUser.password`      | `string` | A senha do seu usuário |
+| `oldPassword`      | `string` | A senha antiga do usuário, caso for alterar a senha |
+
 #### Deletar de usuário
 
 ```http

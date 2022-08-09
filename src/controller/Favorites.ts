@@ -18,7 +18,7 @@ export class FavoritesController extends Controller {
             this.data = await this.business.addIdToObject(this.data, PATH_FAVORITE_DATABASE);
             this.data = this.business.addDataToArray(this.data, favorites)
             await this.business.insertData(PATH_FAVORITE_DATABASE, this.data, true);
-            res.status(200).send('Pokemon Favoritado!');
+            res.status(200).json({ data: this.data });
         } catch (err) {
             if (err instanceof Exception)
                 throw new Exception(err.status, err.message, err.saveLog);

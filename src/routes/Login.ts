@@ -38,4 +38,14 @@ export function routeLogin(app: express.Application) {
                     setErrorInternal(res, err);
             }
         })
+        .put(async (req: Request, res: Response) => {
+            try {
+                await UserObj.updateUser(req, res)
+            } catch (err) {
+                if (err instanceof Exception)
+                    res.status(err.status).send({ msg: err.message });
+                else
+                    setErrorInternal(res, err);
+            }
+        })
 }
