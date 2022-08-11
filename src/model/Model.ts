@@ -5,9 +5,13 @@ const fetch = require('node-fetch');
 
 
 export class Model {
-    async getData(path: string, isReturnArray: boolean) {
+    async getData(path: string, isReturnArray: boolean, especificKey = '') {
         try {
             let data = await fs.readFileSync(path);
+            if (especificKey != '') {
+                return (data.length == 0) ? [] : (await JSON.parse(data.toString()))[especificKey];
+            }
+
             if (isReturnArray) {
                 return (data.length == 0) ? [] : (await JSON.parse(data.toString()));
             }
@@ -26,6 +30,16 @@ export class Model {
 
             return await fs.appendFileSync(path, JSON.stringify(data, null, 4));
         } catch (err) {
+            throw new Error(err)
+        }
+    }
+
+    async getNextId(path: string) {
+        try {
+            const data = await this.getData(path, false);
+            return data.nextId;
+        }
+        catch (err) {
             throw new Error(err)
         }
     }
