@@ -1,5 +1,5 @@
 export interface GradesProps{
-    id: number,
+    id: string,
     student: string,
     subject: string,
     type: string,
