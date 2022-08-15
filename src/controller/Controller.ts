@@ -30,7 +30,7 @@ export class Controller {
             return true;
         }
 
-        const check = this.require.filter(field => !this.data.hasOwnProperty(field))
+        const check = this.require.filter(field => field != "" ? !this.data.hasOwnProperty(field) : false)
         if (check.length > 0) {
             const msgError = `Parâmetros necessários não encontrados: ${check.join(', ')}`;
             throw new Exception(400, msgError, false);
@@ -42,8 +42,8 @@ export class Controller {
         this.require = this.requireMain;
     }
 
-    firtStepsController(req: Request) {
-        this.setData(req.body);
+    firtStepsController(req: Request, parameter : 'body' | 'query') {
+        this.setData(req[parameter]);
         this.setRequire();
         this.validateParams();
     }

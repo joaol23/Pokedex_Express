@@ -11,7 +11,7 @@ export class UserController extends Controller {
 
     async createUser(req: Request, res: Response) {
         try {
-            this.firtStepsController(req);
+            this.firtStepsController(req, 'body');
             const users = await this.business.getData(PATH_USER_DATABASE, true);
             const dataCrypto = this.business.cryptoPassword(this.data);
             this.data = await this.business.addIdToObject(this.data, PATH_USER_DATABASE);
@@ -28,7 +28,7 @@ export class UserController extends Controller {
 
     async validationUser(req: Request, res: Response) {
         try {
-            this.firtStepsController(req);
+            this.firtStepsController(req, 'body');
             const user = await this.business.validateUser(this.data.name, this.data.password);
             res.json({ data: user });
         } catch (err) {
