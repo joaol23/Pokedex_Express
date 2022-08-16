@@ -1,6 +1,5 @@
 import { ERROR_BAD_REQUEST, NOT_FOUND } from '../config/Config.js';
 import { Controller } from './Controller.js';
-import { PATH_FAVORITE_DATABASE } from '../config/ConfigPath.js';
 import { Exception } from '../Exception/Exception.js';
 import { Request, Response } from "express"
 
@@ -14,10 +13,10 @@ export class FavoritesController extends Controller {
     async createFavorite(req: Request, res: Response) {
         try {
             this.firtStepsController(req, 'body');
-            const favorites = await this.business.getData(PATH_FAVORITE_DATABASE, true);
-            this.data = await this.business.addIdToObject(this.data, PATH_FAVORITE_DATABASE);
-            this.data = this.business.addDataToArray(this.data, favorites)
-            await this.business.insertData(PATH_FAVORITE_DATABASE, this.data, true);
+            const favorites = await this.business.getData( true);
+            this.data = await this.business.addIdToObject(this.data);
+            const newFavorites = this.business.addDataToArray(this.data, favorites)
+            await this.business.insertData(newFavorites, true);
             res.status(200).json({ data: this.data });
         } catch (err) {
             if (err instanceof Exception)
@@ -47,7 +46,7 @@ export class FavoritesController extends Controller {
             this.setData(req.query);
             this.setRequireDeleteAndList();
             this.validateParams();
-            const favorites = await this.business.getData(PATH_FAVORITE_DATABASE, true);
+            const favorites = await this.business.getData(true);
             const usersFavorites = this.business.getDataByParameter('user_id', favorites, this.data.id)
             if (usersFavorites.length == 0) {
                 throw new Exception(NOT_FOUND, 'Nenhum pokemon favoritado encontrado para esse usuário', false);

@@ -1,14 +1,6 @@
 {
-    "nextId": 58,
+    "nextId": 59,
     "grades": [
-        {
-            "id": 1,
-            "student": "Loiane Groner",
-            "subject": "01 - JavaScript",
-            "type": "Fórum",
-            "value": 15,
-            "timestamp": "2020-05-19T18:21:24.958Z"
-        },
         {
             "id": 2,
             "student": "Loiane Groner",

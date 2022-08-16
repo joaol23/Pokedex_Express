@@ -23,27 +23,27 @@ export class Business {
         return ArrayData;
     }
 
-    async addIdToObject(data: any, path: string) {
-        if (await this.verifyHasNextId(path)) {
-            const newId = await this.model.getNextId(path);
+    async addIdToObject(data: any) {
+        if (await this.verifyHasNextId()) {
+            const newId = await this.model.getNextId();
             data["id"] = newId;
-            await this.updateNextId(path, newId);
+            await this.updateNextId(newId);
             return data;
         }
-        let id = await this.model.getId(path);
+        let id = await this.model.getId();
         data["id"] = id;
         return data;
     }
 
-    async updateNextId(path: string, oldNext: number | string) {
-        const data = await this.model.getData(path, false);
+    async updateNextId(oldNext: number | string) {
+        const data = await this.model.getData(false);
         data.nextId = (oldNext as number) + 1;
         this.nextId = (oldNext as number) + 1;
-        await this.model.insertData(path, data, true)
+        await this.model.insertData(data, true)
     }
 
-    async verifyHasNextId(path: string): Promise<boolean> {
-        const data = await this.model.getData(path, false);
+    async verifyHasNextId(): Promise<boolean> {
+        const data = await this.model.getData(false);
 
         if (!(typeof data === 'object')) {
             return false;
@@ -56,18 +56,18 @@ export class Business {
         return true;
     }
 
-    async getData(path: string, isReturnArray: boolean, especificKey = '') {
-        return await this.model.getData(path, isReturnArray, especificKey);
+    async getData(isReturnArray: boolean, especificKey = '') {
+        return await this.model.getData(isReturnArray, especificKey);
     }
 
-    async insertData(path: string, data: any, reWriteFile: boolean, nameEspecificKey = '') {
+    async insertData(data: any, reWriteFile: boolean, nameEspecificKey = '') {
         if (nameEspecificKey != '') {
-            let newData = { nextId: await this.model.getNextId(path) };
+            let newData = { nextId: await this.model.getNextId() };
             newData[nameEspecificKey as keyof typeof newData] = data;
-            return await this.model.insertData(path, newData, reWriteFile)
+            return await this.model.insertData(newData, reWriteFile)
         }
 
-        return await this.model.insertData(path, data, reWriteFile)
+        return await this.model.insertData(data, reWriteFile)
     }
 
     getDataByParameter(parameter: string, data: Array<any>, valueParameter: string | number, singleItem = false) {

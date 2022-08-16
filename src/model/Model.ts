@@ -5,9 +5,9 @@ const fetch = require('node-fetch');
 
 
 export class Model {
-    async getData(path: string, isReturnArray: boolean, especificKey = '') {
+    async getData(isReturnArray: boolean, especificKey = '') {
         try {
-            let data = await fs.readFileSync(path);
+            let data = await fs.readFileSync(this.getPath());
             if (especificKey != '') {
                 return (data.length == 0) ? [] : (await JSON.parse(data.toString()))[especificKey];
             }
@@ -22,21 +22,23 @@ export class Model {
         }
     }
 
-    async insertData(path: string, data: any, reWriteFile = false) {
+    getPath(): string { return '' }
+
+    async insertData(data: any, reWriteFile = false) {
         try {
             if (reWriteFile) {
-                return await fs.writeFileSync(path, JSON.stringify(data, null, 4));
+                return await fs.writeFileSync(this.getPath(), JSON.stringify(data, null, 4));
             }
 
-            return await fs.appendFileSync(path, JSON.stringify(data, null, 4));
+            return await fs.appendFileSync(this.getPath(), JSON.stringify(data, null, 4));
         } catch (err) {
             throw new Error(err)
         }
     }
 
-    async getNextId(path: string) {
+    async getNextId() {
         try {
-            const data = await this.getData(path, false);
+            const data = await this.getData(false);
             return data.nextId;
         }
         catch (err) {
@@ -44,9 +46,9 @@ export class Model {
         }
     }
 
-    async getId(path: string) {
+    async getId() {
         try {
-            let data = await this.getData(path, true);
+            let data = await this.getData(true);
             return data.length < 1 ? 1 : this.getNextIdFromData(data);
         }
         catch (err) {

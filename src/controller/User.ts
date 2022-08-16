@@ -1,5 +1,4 @@
 import { Controller } from './Controller.js';
-import { PATH_USER_DATABASE } from '../config/ConfigPath.js';
 import { Exception } from '../Exception/Exception.js';
 import { Request, Response } from "express"
 
@@ -12,11 +11,11 @@ export class UserController extends Controller {
     async createUser(req: Request, res: Response) {
         try {
             this.firtStepsController(req, 'body');
-            const users = await this.business.getData(PATH_USER_DATABASE, true);
+            const users = await this.business.getData(true);
             const dataCrypto = this.business.cryptoPassword(this.data);
-            this.data = await this.business.addIdToObject(this.data, PATH_USER_DATABASE);
-            const newUsers = this.business.addDataToArray(dataCrypto, users, PATH_USER_DATABASE)
-            await this.business.insertData(PATH_USER_DATABASE, newUsers, true);
+            this.data = await this.business.addIdToObject(this.data);
+            const newUsers = this.business.addDataToArray(dataCrypto, users)
+            await this.business.insertData(newUsers, true);
             res.status(200).json({ data: this.data });
         } catch (err) {
             if (err instanceof Exception)

@@ -1,6 +1,5 @@
 import { Business } from './Business.js';
 import { GradesProps } from '../data/@types/Grades.js';
-import { PATH_GRADES_DATABASE } from '../config/ConfigPath.js';
 import { Exception } from '../Exception/Exception.js';
 import { NOT_FOUND } from '../config/Config.js';
 import { avaregeArray, sumArray, topN } from '../lib/Math.js';
@@ -11,13 +10,13 @@ export class GradesBusiness extends Business {
     }
 
     async updateGrade(id: number, newGrade: GradesProps) {
-        const grades: GradesProps[] = await this.model.getData(PATH_GRADES_DATABASE, true, 'grades');
+        const grades: GradesProps[] = await this.model.getData(true, 'grades');
         const indexGradeSelected = super.getIndexDataByParameter('id', grades, id);
         if (indexGradeSelected == -1) {
             throw new Exception(NOT_FOUND, "Nota não encontrada", false);
         }
         const newGrades = super.updateData(grades, newGrade, indexGradeSelected);
-        await super.insertData(PATH_GRADES_DATABASE, newGrades, true, 'grades');
+        await super.insertData(newGrades, true, 'grades');
         return newGrades[indexGradeSelected];
     }
 
@@ -26,13 +25,13 @@ export class GradesBusiness extends Business {
     }
 
     async deleteGrade(id: string) {
-        const grades = await super.getData(PATH_GRADES_DATABASE, true, 'grades');
+        const grades = await super.getData(true, 'grades');
         const newGrades = this.getGradesWithoutId(grades, id);
-        return await super.insertData(PATH_GRADES_DATABASE, newGrades, true, 'grades')
+        return await super.insertData(newGrades, true, 'grades')
     }
 
     async getGradeById(data: { id: number | string }): Promise<GradesProps> {
-        const grades: GradesProps[] = await super.getData(PATH_GRADES_DATABASE, true, 'grades');
+        const grades: GradesProps[] = await super.getData(true, 'grades');
         const grade = super.getDataByParameter('id', grades, data.id.toString(), true);
         if (!grade) {
             throw new Exception(NOT_FOUND, 'Nota não encontrada', false);
@@ -41,7 +40,7 @@ export class GradesBusiness extends Business {
     }
 
     async getAllGrades(data: any): Promise<GradesProps[]> {
-        return await super.getData(PATH_GRADES_DATABASE, true, 'grades');
+        return await super.getData(true, 'grades');
     }
 
     async getFinalGrade(data: { student: string, subject: string }): Promise<number> {
@@ -50,7 +49,7 @@ export class GradesBusiness extends Business {
     }
 
     async getGradeByStudentAndSubject(data: { student: string, subject: string }): Promise<GradesProps[]> {
-        const grades: GradesProps[] = await super.getData(PATH_GRADES_DATABASE, true, 'grades');
+        const grades: GradesProps[] = await super.getData(true, 'grades');
         const gradesByStudent = super.getDataByParameter('student', grades, data.student);
         if (gradesByStudent.length == 0) {
             throw new Exception(NOT_FOUND, "Aluno não encontrado", false);
@@ -69,7 +68,7 @@ export class GradesBusiness extends Business {
     }
 
     async getTopThreeStudents(data: { subject: string }) {
-        const grades: GradesProps[] = await super.getData(PATH_GRADES_DATABASE, true, 'grades');
+        const grades: GradesProps[] = await super.getData(true, 'grades');
         const gradesBySubject = super.getDataByParameter('subject', grades, data.subject);
         if (gradesBySubject.length == 0) {
             throw new Exception(NOT_FOUND, "Nenhum aluno possui essa matéria", false);
