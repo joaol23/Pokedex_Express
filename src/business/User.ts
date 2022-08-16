@@ -1,7 +1,6 @@
 import { CONFIG_ENCRYPT, UNAUTHORIZED_REQUEST, NOT_FOUND } from '../config/Config.js';
 import CryptoJS, { createHmac } from "crypto";
 import { Business } from './Business.js';
-import { PATH_USER_DATABASE } from '../config/ConfigPath.js';
 import { Exception } from '../Exception/Exception.js';
 import { UserProps } from '../data/@types/User.js'
 
@@ -16,7 +15,7 @@ export class UserBusiness extends Business {
     }
 
     async validateUser(name: string, password: string) {
-        const users = await super.getData(PATH_USER_DATABASE, true);
+        const users = await super.getData(true);
         let userSearch = this.getUsersByName(name, users);
         if (userSearch) {
             if (this.encryptPassword(password.toString()) == userSearch.password) {
@@ -41,9 +40,9 @@ export class UserBusiness extends Business {
     }
 
     async deleteUser(id: string) {
-        const users = await super.getData(PATH_USER_DATABASE, true);
+        const users = await super.getData(true);
         const newUsers = this.getUsersWithoutId(users, id);
-        return await super.insertData(PATH_USER_DATABASE, newUsers, true)
+        return await super.insertData(newUsers, true)
     }
 
     canChangePasswordUser(oldPassword: string, selectedUser: UserProps) {
@@ -57,7 +56,7 @@ export class UserBusiness extends Business {
     }
 
     async updateUser(id: string, newUser: UserProps, oldPassword = '') {
-        const users = await super.getData(PATH_USER_DATABASE, true);
+        const users = await super.getData(true);
         const indexUserSelected = super.getIndexDataByParameter('id', users, id);
         if (indexUserSelected == -1){
             throw new Exception(NOT_FOUND, "Usuário não encontrado", false);
@@ -68,7 +67,7 @@ export class UserBusiness extends Business {
             newUser = this.cryptoPassword(newUser);
         }
         const newUsers = super.updateData(users, newUser, indexUserSelected);
-        await super.insertData(PATH_USER_DATABASE, newUsers, true);
+        await super.insertData(newUsers, true);
         return newUsers[indexUserSelected];
     }
 }

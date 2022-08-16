@@ -9,7 +9,6 @@ export function avaregeArray(array: Array<any>, parameter: string) {
 
 export function topN(arr: Array<any>, n: number, parameter: string) {
     return arr
-        .slice()
         .sort((a, b) => {
             return Number(b[parameter]) - Number(a[parameter])
         })

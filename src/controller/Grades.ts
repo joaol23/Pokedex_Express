@@ -1,7 +1,6 @@
 import { Controller } from './Controller.js';
 import { Exception } from '../Exception/Exception.js';
 import { Request, Response } from "express"
-import { PATH_GRADES_DATABASE } from '../config/ConfigPath.js';
 import { GradesProps } from '../data/@types/Grades.js'
 import { ERROR_BAD_REQUEST, NOT_FOUND } from '../config/Config.js';
 
@@ -35,11 +34,11 @@ export class GradesController extends Controller {
         try {
             this.mainRequire();
             this.firtStepsController(req, 'body');
-            const grades: GradesProps[] = await this.business.getData(PATH_GRADES_DATABASE, true, 'grades');
-            this.data = await this.business.addIdToObject(this.data, PATH_GRADES_DATABASE);
+            const grades: GradesProps[] = await this.business.getData(true, 'grades');
+            this.data = await this.business.addIdToObject(this.data);
             this.data = this.business.insertDateTime(this.data, 'timestamp');
             const newGrades = this.business.addDataToArray(this.data, grades)
-            await this.business.insertData(PATH_GRADES_DATABASE, newGrades, true, 'grades');
+            await this.business.insertData(newGrades, true, 'grades');
             res.status(200).json({ data: this.data });
         } catch (err) {
             if (err instanceof Exception)
