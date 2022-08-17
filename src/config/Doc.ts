@@ -7,7 +7,7 @@ export const swaggerDocument =
         "title": "Cotemig Projects API"
     },
     "host": "localhost:3000",
-    "basePath": "",
+    "basePath": "/api",
     "tags": [
         {
             "name": "grades",
@@ -15,7 +15,7 @@ export const swaggerDocument =
         }
     ],
     "paths": {
-        "/api/notas": {
+        "/notas": {
             "get": {
                 "tags": [
                     "grades"
