@@ -6,10 +6,13 @@ import { routeFavorite } from './routes/Favorites.js';
 import { saveLog } from './lib/Log.js';
 import { routeGrades } from './routes/Grades.js';
 import { routeMenu } from './routes/Menu.js';
+import swaggerUi from "swagger-ui-express";
+import { swaggerDocument } from "../src/config/Doc.js"
 
 const app: express.Application = express();
 app.use(express.json())
 
+app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 routePokemon(app);
 routeLogin(app);
 routeFavorite(app);
