@@ -3,6 +3,11 @@
 ```
   https://api-cotemig-project.herokuapp.com/
 ```
+## Documentação Swagger (teste)
+
+```
+  https://api-cotemig-project.herokuapp.com/doc
+```
 
 ## Documentação da API
 
