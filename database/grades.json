@@ -1,5 +1,5 @@
 {
-    "nextId": 59,
+    "nextId": 60,
     "grades": [
         {
             "id": 2,
@@ -416,6 +416,14 @@
             "value": 32,
             "id": 57,
             "timestamp": "2022-08-15T17:34:08.288Z"
+        },
+        {
+            "student": "Pedro",
+            "subject": "React",
+            "type": "Projeto",
+            "value": 10,
+            "id": 59,
+            "timestamp": "2022-08-17T00:52:52.948Z"
         }
     ]
 }
