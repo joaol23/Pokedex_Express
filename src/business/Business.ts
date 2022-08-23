@@ -1,16 +1,23 @@
 export class Business {
     model: any;
     nextId: number;
+    namespace: string;
+
     constructor() {
         const businessClass = this.constructor.name;
         const model = businessClass.replace('Business', 'Model');
         const nameFile = businessClass.replace('Business', '');
         this.nextId = 0;
+        this.namespace = this.getNamespace();
 
-        import(`../model/${nameFile}.js`).then(response => {
+        import(`../model/${this.namespace}${nameFile}.js`).then(response => {
             new response[model]();
             this.model = new response[model]();
         });
+    }
+
+    getNamespace(): string {
+        return '';
     }
 
     insertDateTime(data: any, nameIndex: string) {

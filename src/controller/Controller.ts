@@ -6,19 +6,24 @@ export class Controller {
     data: any;
     require: Array<string>;
     requireMain: Array<string>;
+    namespace: string;
 
     constructor() {
         const controllerClass = this.constructor.name;
         const business = controllerClass.replace('Controller', 'Business');
         const nameFile = controllerClass.replace('Controller', '');
-
         this.business = {};
         this.data = [];
         this.require = [];
-        import(`../business/${nameFile}.js`).then(response => {
+        this.namespace = this.getNamespace();
+        import(`../business/${this.namespace}${nameFile}.js`).then(response => {
             new response[business]();
             this.business = new response[business]();
         });
+    }
+
+    getNamespace(): string {
+        return '';
     }
 
     setData(data: any) {
@@ -42,7 +47,7 @@ export class Controller {
         this.require = this.requireMain;
     }
 
-    firtStepsController(req: Request, parameter : 'body' | 'query') {
+    firtStepsController(req: Request, parameter: 'body' | 'query') {
         this.setData(req[parameter]);
         this.setRequire();
         this.validateParams();

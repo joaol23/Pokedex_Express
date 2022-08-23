@@ -1,8 +1,7 @@
 {
     "compilerOptions": {
         "lib": [
-            "ESNext" /* ESNext includes new Level-4 features that were
-                   recently added to the ECMA-262 JS spec */
+            "ESNext"
         ],
         "types": [
           "node",
