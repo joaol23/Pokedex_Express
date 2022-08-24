@@ -8,13 +8,14 @@ export class FilesStateController extends Controller {
         super();
     }
 
-    override getNamespace() : string{
+    override getNamespace(): string {
         return 'files/'
     }
 
-    async createFavorite(req: Request, res: Response) {
+    async getFilesState(req: Request, res: Response) {
         try {
-            res.status(200).json('test');
+            const files = await this.business.getFilesState();
+            res.status(200).json({ data: files });
         } catch (err) {
             if (err instanceof Exception)
                 throw new Exception(err.status, err.message, err.saveLog);

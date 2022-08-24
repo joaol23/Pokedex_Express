@@ -1,0 +1,922 @@
+[
+    {
+        "id": "698",
+        "name": "Abaiara",
+        "state_id": "6"
+    },
+    {
+        "id": "699",
+        "name": "Acarape",
+        "state_id": "6"
+    },
+    {
+        "id": "700",
+        "name": "Acaraú",
+        "state_id": "6"
+    },
+    {
+        "id": "701",
+        "name": "Acopiara",
+        "state_id": "6"
+    },
+    {
+        "id": "702",
+        "name": "Aiuaba",
+        "state_id": "6"
+    },
+    {
+        "id": "703",
+        "name": "Alcântaras",
+        "state_id": "6"
+    },
+    {
+        "id": "704",
+        "name": "Altaneira",
+        "state_id": "6"
+    },
+    {
+        "id": "705",
+        "name": "Alto Santo",
+        "state_id": "6"
+    },
+    {
+        "id": "706",
+        "name": "Amontada",
+        "state_id": "6"
+    },
+    {
+        "id": "707",
+        "name": "Antonina do Norte",
+        "state_id": "6"
+    },
+    {
+        "id": "708",
+        "name": "Apuiarés",
+        "state_id": "6"
+    },
+    {
+        "id": "709",
+        "name": "Aquiraz",
+        "state_id": "6"
+    },
+    {
+        "id": "710",
+        "name": "Aracati",
+        "state_id": "6"
+    },
+    {
+        "id": "711",
+        "name": "Aracoiaba",
+        "state_id": "6"
+    },
+    {
+        "id": "712",
+        "name": "Ararendá",
+        "state_id": "6"
+    },
+    {
+        "id": "713",
+        "name": "Araripe",
+        "state_id": "6"
+    },
+    {
+        "id": "714",
+        "name": "Aratuba",
+        "state_id": "6"
+    },
+    {
+        "id": "715",
+        "name": "Arneiroz",
+        "state_id": "6"
+    },
+    {
+        "id": "716",
+        "name": "Assaré",
+        "state_id": "6"
+    },
+    {
+        "id": "717",
+        "name": "Aurora",
+        "state_id": "6"
+    },
+    {
+        "id": "718",
+        "name": "Baixio",
+        "state_id": "6"
+    },
+    {
+        "id": "719",
+        "name": "Banabuiú",
+        "state_id": "6"
+    },
+    {
+        "id": "720",
+        "name": "Barbalha",
+        "state_id": "6"
+    },
+    {
+        "id": "721",
+        "name": "Barreira",
+        "state_id": "6"
+    },
+    {
+        "id": "722",
+        "name": "Barro",
+        "state_id": "6"
+    },
+    {
+        "id": "723",
+        "name": "Barroquinha",
+        "state_id": "6"
+    },
+    {
+        "id": "724",
+        "name": "Baturité",
+        "state_id": "6"
+    },
+    {
+        "id": "725",
+        "name": "Beberibe",
+        "state_id": "6"
+    },
+    {
+        "id": "726",
+        "name": "Bela Cruz",
+        "state_id": "6"
+    },
+    {
+        "id": "727",
+        "name": "Boa Viagem",
+        "state_id": "6"
+    },
+    {
+        "id": "728",
+        "name": "Brejo Santo",
+        "state_id": "6"
+    },
+    {
+        "id": "729",
+        "name": "Camocim",
+        "state_id": "6"
+    },
+    {
+        "id": "730",
+        "name": "Campos Sales",
+        "state_id": "6"
+    },
+    {
+        "id": "731",
+        "name": "Canindé",
+        "state_id": "6"
+    },
+    {
+        "id": "732",
+        "name": "Capistrano",
+        "state_id": "6"
+    },
+    {
+        "id": "733",
+        "name": "Caridade",
+        "state_id": "6"
+    },
+    {
+        "id": "734",
+        "name": "Cariré",
+        "state_id": "6"
+    },
+    {
+        "id": "735",
+        "name": "Caririaçu",
+        "state_id": "6"
+    },
+    {
+        "id": "736",
+        "name": "Cariús",
+        "state_id": "6"
+    },
+    {
+        "id": "737",
+        "name": "Carnaubal",
+        "state_id": "6"
+    },
+    {
+        "id": "738",
+        "name": "Cascavel",
+        "state_id": "6"
+    },
+    {
+        "id": "739",
+        "name": "Catarina",
+        "state_id": "6"
+    },
+    {
+        "id": "740",
+        "name": "Catunda",
+        "state_id": "6"
+    },
+    {
+        "id": "741",
+        "name": "Caucaia",
+        "state_id": "6"
+    },
+    {
+        "id": "742",
+        "name": "Cedro",
+        "state_id": "6"
+    },
+    {
+        "id": "743",
+        "name": "Chaval",
+        "state_id": "6"
+    },
+    {
+        "id": "744",
+        "name": "Choró",
+        "state_id": "6"
+    },
+    {
+        "id": "745",
+        "name": "Chorozinho",
+        "state_id": "6"
+    },
+    {
+        "id": "746",
+        "name": "Coreaú",
+        "state_id": "6"
+    },
+    {
+        "id": "747",
+        "name": "Crateús",
+        "state_id": "6"
+    },
+    {
+        "id": "748",
+        "name": "Crato",
+        "state_id": "6"
+    },
+    {
+        "id": "749",
+        "name": "Croatá",
+        "state_id": "6"
+    },
+    {
+        "id": "750",
+        "name": "Cruz",
+        "state_id": "6"
+    },
+    {
+        "id": "751",
+        "name": "Deputado Irapuan Pinheiro",
+        "state_id": "6"
+    },
+    {
+        "id": "752",
+        "name": "Ererê",
+        "state_id": "6"
+    },
+    {
+        "id": "753",
+        "name": "Eusébio",
+        "state_id": "6"
+    },
+    {
+        "id": "754",
+        "name": "Farias Brito",
+        "state_id": "6"
+    },
+    {
+        "id": "755",
+        "name": "Forquilha",
+        "state_id": "6"
+    },
+    {
+        "id": "756",
+        "name": "Fortaleza",
+        "state_id": "6"
+    },
+    {
+        "id": "757",
+        "name": "Fortim",
+        "state_id": "6"
+    },
+    {
+        "id": "758",
+        "name": "Frecheirinha",
+        "state_id": "6"
+    },
+    {
+        "id": "759",
+        "name": "General Sampaio",
+        "state_id": "6"
+    },
+    {
+        "id": "760",
+        "name": "Graça",
+        "state_id": "6"
+    },
+    {
+        "id": "761",
+        "name": "Granja",
+        "state_id": "6"
+    },
+    {
+        "id": "762",
+        "name": "Granjeiro",
+        "state_id": "6"
+    },
+    {
+        "id": "763",
+        "name": "Groaíras",
+        "state_id": "6"
+    },
+    {
+        "id": "764",
+        "name": "Guaiúba",
+        "state_id": "6"
+    },
+    {
+        "id": "765",
+        "name": "Guaraciaba do Norte",
+        "state_id": "6"
+    },
+    {
+        "id": "766",
+        "name": "Guaramiranga",
+        "state_id": "6"
+    },
+    {
+        "id": "767",
+        "name": "Hidrolândia",
+        "state_id": "6"
+    },
+    {
+        "id": "768",
+        "name": "Horizonte",
+        "state_id": "6"
+    },
+    {
+        "id": "769",
+        "name": "Ibaretama",
+        "state_id": "6"
+    },
+    {
+        "id": "770",
+        "name": "Ibiapina",
+        "state_id": "6"
+    },
+    {
+        "id": "771",
+        "name": "Ibicuitinga",
+        "state_id": "6"
+    },
+    {
+        "id": "772",
+        "name": "Icapuí",
+        "state_id": "6"
+    },
+    {
+        "id": "773",
+        "name": "Icó",
+        "state_id": "6"
+    },
+    {
+        "id": "774",
+        "name": "Iguatu",
+        "state_id": "6"
+    },
+    {
+        "id": "775",
+        "name": "Independência",
+        "state_id": "6"
+    },
+    {
+        "id": "776",
+        "name": "Ipaporanga",
+        "state_id": "6"
+    },
+    {
+        "id": "777",
+        "name": "Ipaumirim",
+        "state_id": "6"
+    },
+    {
+        "id": "778",
+        "name": "Ipu",
+        "state_id": "6"
+    },
+    {
+        "id": "779",
+        "name": "Ipueiras",
+        "state_id": "6"
+    },
+    {
+        "id": "780",
+        "name": "Iracema",
+        "state_id": "6"
+    },
+    {
+        "id": "781",
+        "name": "Irauçuba",
+        "state_id": "6"
+    },
+    {
+        "id": "782",
+        "name": "Itaiçaba",
+        "state_id": "6"
+    },
+    {
+        "id": "783",
+        "name": "Itaitinga",
+        "state_id": "6"
+    },
+    {
+        "id": "784",
+        "name": "Itapagé",
+        "state_id": "6"
+    },
+    {
+        "id": "785",
+        "name": "Itapipoca",
+        "state_id": "6"
+    },
+    {
+        "id": "786",
+        "name": "Itapiúna",
+        "state_id": "6"
+    },
+    {
+        "id": "787",
+        "name": "Itarema",
+        "state_id": "6"
+    },
+    {
+        "id": "788",
+        "name": "Itatira",
+        "state_id": "6"
+    },
+    {
+        "id": "789",
+        "name": "Jaguaretama",
+        "state_id": "6"
+    },
+    {
+        "id": "790",
+        "name": "Jaguaribara",
+        "state_id": "6"
+    },
+    {
+        "id": "791",
+        "name": "Jaguaribe",
+        "state_id": "6"
+    },
+    {
+        "id": "792",
+        "name": "Jaguaruana",
+        "state_id": "6"
+    },
+    {
+        "id": "793",
+        "name": "Jardim",
+        "state_id": "6"
+    },
+    {
+        "id": "794",
+        "name": "Jati",
+        "state_id": "6"
+    },
+    {
+        "id": "795",
+        "name": "Jijoca de Jericoacoara",
+        "state_id": "6"
+    },
+    {
+        "id": "796",
+        "name": "Juazeiro do Norte",
+        "state_id": "6"
+    },
+    {
+        "id": "797",
+        "name": "Jucás",
+        "state_id": "6"
+    },
+    {
+        "id": "798",
+        "name": "Lavras da Mangabeira",
+        "state_id": "6"
+    },
+    {
+        "id": "799",
+        "name": "Limoeiro do Norte",
+        "state_id": "6"
+    },
+    {
+        "id": "800",
+        "name": "Madalena",
+        "state_id": "6"
+    },
+    {
+        "id": "801",
+        "name": "Maracanaú",
+        "state_id": "6"
+    },
+    {
+        "id": "802",
+        "name": "Maranguape",
+        "state_id": "6"
+    },
+    {
+        "id": "803",
+        "name": "Marco",
+        "state_id": "6"
+    },
+    {
+        "id": "804",
+        "name": "Martinópole",
+        "state_id": "6"
+    },
+    {
+        "id": "805",
+        "name": "Massapê",
+        "state_id": "6"
+    },
+    {
+        "id": "806",
+        "name": "Mauriti",
+        "state_id": "6"
+    },
+    {
+        "id": "807",
+        "name": "Meruoca",
+        "state_id": "6"
+    },
+    {
+        "id": "808",
+        "name": "Milagres",
+        "state_id": "6"
+    },
+    {
+        "id": "809",
+        "name": "Milhã",
+        "state_id": "6"
+    },
+    {
+        "id": "810",
+        "name": "Miraíma",
+        "state_id": "6"
+    },
+    {
+        "id": "811",
+        "name": "Missão Velha",
+        "state_id": "6"
+    },
+    {
+        "id": "812",
+        "name": "Mombaça",
+        "state_id": "6"
+    },
+    {
+        "id": "813",
+        "name": "Monsenhor Tabosa",
+        "state_id": "6"
+    },
+    {
+        "id": "814",
+        "name": "Morada Nova",
+        "state_id": "6"
+    },
+    {
+        "id": "815",
+        "name": "Moraújo",
+        "state_id": "6"
+    },
+    {
+        "id": "816",
+        "name": "Morrinhos",
+        "state_id": "6"
+    },
+    {
+        "id": "817",
+        "name": "Mucambo",
+        "state_id": "6"
+    },
+    {
+        "id": "818",
+        "name": "Mulungu",
+        "state_id": "6"
+    },
+    {
+        "id": "819",
+        "name": "Nova Olinda",
+        "state_id": "6"
+    },
+    {
+        "id": "820",
+        "name": "Nova Russas",
+        "state_id": "6"
+    },
+    {
+        "id": "821",
+        "name": "Novo Oriente",
+        "state_id": "6"
+    },
+    {
+        "id": "822",
+        "name": "Ocara",
+        "state_id": "6"
+    },
+    {
+        "id": "823",
+        "name": "Orós",
+        "state_id": "6"
+    },
+    {
+        "id": "824",
+        "name": "Pacajus",
+        "state_id": "6"
+    },
+    {
+        "id": "825",
+        "name": "Pacatuba",
+        "state_id": "6"
+    },
+    {
+        "id": "826",
+        "name": "Pacoti",
+        "state_id": "6"
+    },
+    {
+        "id": "827",
+        "name": "Pacujá",
+        "state_id": "6"
+    },
+    {
+        "id": "828",
+        "name": "Palhano",
+        "state_id": "6"
+    },
+    {
+        "id": "829",
+        "name": "Palmácia",
+        "state_id": "6"
+    },
+    {
+        "id": "830",
+        "name": "Paracuru",
+        "state_id": "6"
+    },
+    {
+        "id": "831",
+        "name": "Paraipaba",
+        "state_id": "6"
+    },
+    {
+        "id": "832",
+        "name": "Parambu",
+        "state_id": "6"
+    },
+    {
+        "id": "833",
+        "name": "Paramoti",
+        "state_id": "6"
+    },
+    {
+        "id": "834",
+        "name": "Pedra Branca",
+        "state_id": "6"
+    },
+    {
+        "id": "835",
+        "name": "Penaforte",
+        "state_id": "6"
+    },
+    {
+        "id": "836",
+        "name": "Pentecoste",
+        "state_id": "6"
+    },
+    {
+        "id": "837",
+        "name": "Pereiro",
+        "state_id": "6"
+    },
+    {
+        "id": "838",
+        "name": "Pindoretama",
+        "state_id": "6"
+    },
+    {
+        "id": "839",
+        "name": "Piquet Carneiro",
+        "state_id": "6"
+    },
+    {
+        "id": "840",
+        "name": "Pires Ferreira",
+        "state_id": "6"
+    },
+    {
+        "id": "841",
+        "name": "Poranga",
+        "state_id": "6"
+    },
+    {
+        "id": "842",
+        "name": "Porteiras",
+        "state_id": "6"
+    },
+    {
+        "id": "843",
+        "name": "Potengi",
+        "state_id": "6"
+    },
+    {
+        "id": "844",
+        "name": "Potiretama",
+        "state_id": "6"
+    },
+    {
+        "id": "845",
+        "name": "Quiterianópolis",
+        "state_id": "6"
+    },
+    {
+        "id": "846",
+        "name": "Quixadá",
+        "state_id": "6"
+    },
+    {
+        "id": "847",
+        "name": "Quixelô",
+        "state_id": "6"
+    },
+    {
+        "id": "848",
+        "name": "Quixeramobim",
+        "state_id": "6"
+    },
+    {
+        "id": "849",
+        "name": "Quixeré",
+        "state_id": "6"
+    },
+    {
+        "id": "850",
+        "name": "Redenção",
+        "state_id": "6"
+    },
+    {
+        "id": "851",
+        "name": "Reriutaba",
+        "state_id": "6"
+    },
+    {
+        "id": "852",
+        "name": "Russas",
+        "state_id": "6"
+    },
+    {
+        "id": "853",
+        "name": "Saboeiro",
+        "state_id": "6"
+    },
+    {
+        "id": "854",
+        "name": "Salitre",
+        "state_id": "6"
+    },
+    {
+        "id": "855",
+        "name": "Santa Quitéria",
+        "state_id": "6"
+    },
+    {
+        "id": "856",
+        "name": "Santana do Acaraú",
+        "state_id": "6"
+    },
+    {
+        "id": "857",
+        "name": "Santana do Cariri",
+        "state_id": "6"
+    },
+    {
+        "id": "858",
+        "name": "São Benedito",
+        "state_id": "6"
+    },
+    {
+        "id": "859",
+        "name": "São Gonçalo do Amarante",
+        "state_id": "6"
+    },
+    {
+        "id": "860",
+        "name": "São João do Jaguaribe",
+        "state_id": "6"
+    },
+    {
+        "id": "861",
+        "name": "São Luís do Curu",
+        "state_id": "6"
+    },
+    {
+        "id": "862",
+        "name": "Senador Pompeu",
+        "state_id": "6"
+    },
+    {
+        "id": "863",
+        "name": "Senador Sá",
+        "state_id": "6"
+    },
+    {
+        "id": "864",
+        "name": "Sobral",
+        "state_id": "6"
+    },
+    {
+        "id": "865",
+        "name": "Solonópole",
+        "state_id": "6"
+    },
+    {
+        "id": "866",
+        "name": "Tabuleiro do Norte",
+        "state_id": "6"
+    },
+    {
+        "id": "867",
+        "name": "Tamboril",
+        "state_id": "6"
+    },
+    {
+        "id": "868",
+        "name": "Tarrafas",
+        "state_id": "6"
+    },
+    {
+        "id": "869",
+        "name": "Tauá",
+        "state_id": "6"
+    },
+    {
+        "id": "870",
+        "name": "Tejuçuoca",
+        "state_id": "6"
+    },
+    {
+        "id": "871",
+        "name": "Tianguá",
+        "state_id": "6"
+    },
+    {
+        "id": "872",
+        "name": "Trairi",
+        "state_id": "6"
+    },
+    {
+        "id": "873",
+        "name": "Tururu",
+        "state_id": "6"
+    },
+    {
+        "id": "874",
+        "name": "Ubajara",
+        "state_id": "6"
+    },
+    {
+        "id": "875",
+        "name": "Umari",
+        "state_id": "6"
+    },
+    {
+        "id": "876",
+        "name": "Umirim",
+        "state_id": "6"
+    },
+    {
+        "id": "877",
+        "name": "Uruburetama",
+        "state_id": "6"
+    },
+    {
+        "id": "878",
+        "name": "Uruoca",
+        "state_id": "6"
+    },
+    {
+        "id": "879",
+        "name": "Varjota",
+        "state_id": "6"
+    },
+    {
+        "id": "880",
+        "name": "Várzea Alegre",
+        "state_id": "6"
+    },
+    {
+        "id": "881",
+        "name": "Viçosa do Ceará",
+        "state_id": "6"
+    }
+]

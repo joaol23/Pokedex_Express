@@ -1,0 +1,1117 @@
+[
+    {
+        "id": "3368",
+        "name": "Acauã",
+        "state_id": "17"
+    },
+    {
+        "id": "3369",
+        "name": "Agricolândia",
+        "state_id": "17"
+    },
+    {
+        "id": "3370",
+        "name": "Água Branca",
+        "state_id": "17"
+    },
+    {
+        "id": "3371",
+        "name": "Alagoinha do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3372",
+        "name": "Alegrete do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3373",
+        "name": "Alto Longá",
+        "state_id": "17"
+    },
+    {
+        "id": "3374",
+        "name": "Altos",
+        "state_id": "17"
+    },
+    {
+        "id": "3375",
+        "name": "Alvorada do Gurguéia",
+        "state_id": "17"
+    },
+    {
+        "id": "3376",
+        "name": "Amarante",
+        "state_id": "17"
+    },
+    {
+        "id": "3377",
+        "name": "Angical do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3378",
+        "name": "Anísio de Abreu",
+        "state_id": "17"
+    },
+    {
+        "id": "3379",
+        "name": "Antônio Almeida",
+        "state_id": "17"
+    },
+    {
+        "id": "3380",
+        "name": "Aroazes",
+        "state_id": "17"
+    },
+    {
+        "id": "3381",
+        "name": "Aroeiras do Itaim",
+        "state_id": "17"
+    },
+    {
+        "id": "3382",
+        "name": "Arraial",
+        "state_id": "17"
+    },
+    {
+        "id": "3383",
+        "name": "Assunção do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3384",
+        "name": "Avelino Lopes",
+        "state_id": "17"
+    },
+    {
+        "id": "3385",
+        "name": "Baixa Grande do Ribeiro",
+        "state_id": "17"
+    },
+    {
+        "id": "3386",
+        "name": "Barra d`Alcântara",
+        "state_id": "17"
+    },
+    {
+        "id": "3387",
+        "name": "Barras",
+        "state_id": "17"
+    },
+    {
+        "id": "3388",
+        "name": "Barreiras do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3389",
+        "name": "Barro Duro",
+        "state_id": "17"
+    },
+    {
+        "id": "3390",
+        "name": "Batalha",
+        "state_id": "17"
+    },
+    {
+        "id": "3391",
+        "name": "Bela Vista do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3392",
+        "name": "Belém do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3393",
+        "name": "Beneditinos",
+        "state_id": "17"
+    },
+    {
+        "id": "3394",
+        "name": "Bertolínia",
+        "state_id": "17"
+    },
+    {
+        "id": "3395",
+        "name": "Betânia do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3396",
+        "name": "Boa Hora",
+        "state_id": "17"
+    },
+    {
+        "id": "3397",
+        "name": "Bocaina",
+        "state_id": "17"
+    },
+    {
+        "id": "3398",
+        "name": "Bom Jesus",
+        "state_id": "17"
+    },
+    {
+        "id": "3399",
+        "name": "Bom Princípio do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3400",
+        "name": "Bonfim do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3401",
+        "name": "Boqueirão do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3402",
+        "name": "Brasileira",
+        "state_id": "17"
+    },
+    {
+        "id": "3403",
+        "name": "Brejo do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3404",
+        "name": "Buriti dos Lopes",
+        "state_id": "17"
+    },
+    {
+        "id": "3405",
+        "name": "Buriti dos Montes",
+        "state_id": "17"
+    },
+    {
+        "id": "3406",
+        "name": "Cabeceiras do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3407",
+        "name": "Cajazeiras do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3408",
+        "name": "Cajueiro da Praia",
+        "state_id": "17"
+    },
+    {
+        "id": "3409",
+        "name": "Caldeirão Grande do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3410",
+        "name": "Campinas do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3411",
+        "name": "Campo Alegre do Fidalgo",
+        "state_id": "17"
+    },
+    {
+        "id": "3412",
+        "name": "Campo Grande do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3413",
+        "name": "Campo Largo do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3414",
+        "name": "Campo Maior",
+        "state_id": "17"
+    },
+    {
+        "id": "3415",
+        "name": "Canavieira",
+        "state_id": "17"
+    },
+    {
+        "id": "3416",
+        "name": "Canto do Buriti",
+        "state_id": "17"
+    },
+    {
+        "id": "3417",
+        "name": "Capitão de Campos",
+        "state_id": "17"
+    },
+    {
+        "id": "3418",
+        "name": "Capitão Gervásio Oliveira",
+        "state_id": "17"
+    },
+    {
+        "id": "3419",
+        "name": "Caracol",
+        "state_id": "17"
+    },
+    {
+        "id": "3420",
+        "name": "Caraúbas do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3421",
+        "name": "Caridade do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3422",
+        "name": "Castelo do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3423",
+        "name": "Caxingó",
+        "state_id": "17"
+    },
+    {
+        "id": "3424",
+        "name": "Cocal",
+        "state_id": "17"
+    },
+    {
+        "id": "3425",
+        "name": "Cocal de Telha",
+        "state_id": "17"
+    },
+    {
+        "id": "3426",
+        "name": "Cocal dos Alves",
+        "state_id": "17"
+    },
+    {
+        "id": "3427",
+        "name": "Coivaras",
+        "state_id": "17"
+    },
+    {
+        "id": "3428",
+        "name": "Colônia do Gurguéia",
+        "state_id": "17"
+    },
+    {
+        "id": "3429",
+        "name": "Colônia do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3430",
+        "name": "Conceição do Canindé",
+        "state_id": "17"
+    },
+    {
+        "id": "3431",
+        "name": "Coronel José Dias",
+        "state_id": "17"
+    },
+    {
+        "id": "3432",
+        "name": "Corrente",
+        "state_id": "17"
+    },
+    {
+        "id": "3433",
+        "name": "Cristalândia do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3434",
+        "name": "Cristino Castro",
+        "state_id": "17"
+    },
+    {
+        "id": "3435",
+        "name": "Curimatá",
+        "state_id": "17"
+    },
+    {
+        "id": "3436",
+        "name": "Currais",
+        "state_id": "17"
+    },
+    {
+        "id": "3437",
+        "name": "Curral Novo do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3438",
+        "name": "Curralinhos",
+        "state_id": "17"
+    },
+    {
+        "id": "3439",
+        "name": "Demerval Lobão",
+        "state_id": "17"
+    },
+    {
+        "id": "3440",
+        "name": "Dirceu Arcoverde",
+        "state_id": "17"
+    },
+    {
+        "id": "3441",
+        "name": "Dom Expedito Lopes",
+        "state_id": "17"
+    },
+    {
+        "id": "3442",
+        "name": "Dom Inocêncio",
+        "state_id": "17"
+    },
+    {
+        "id": "3443",
+        "name": "Domingos Mourão",
+        "state_id": "17"
+    },
+    {
+        "id": "3444",
+        "name": "Elesbão Veloso",
+        "state_id": "17"
+    },
+    {
+        "id": "3445",
+        "name": "Eliseu Martins",
+        "state_id": "17"
+    },
+    {
+        "id": "3446",
+        "name": "Esperantina",
+        "state_id": "17"
+    },
+    {
+        "id": "3447",
+        "name": "Fartura do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3448",
+        "name": "Flores do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3449",
+        "name": "Floresta do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3450",
+        "name": "Floriano",
+        "state_id": "17"
+    },
+    {
+        "id": "3451",
+        "name": "Francinópolis",
+        "state_id": "17"
+    },
+    {
+        "id": "3452",
+        "name": "Francisco Ayres",
+        "state_id": "17"
+    },
+    {
+        "id": "3453",
+        "name": "Francisco Macedo",
+        "state_id": "17"
+    },
+    {
+        "id": "3454",
+        "name": "Francisco Santos",
+        "state_id": "17"
+    },
+    {
+        "id": "3455",
+        "name": "Fronteiras",
+        "state_id": "17"
+    },
+    {
+        "id": "3456",
+        "name": "Geminiano",
+        "state_id": "17"
+    },
+    {
+        "id": "3457",
+        "name": "Gilbués",
+        "state_id": "17"
+    },
+    {
+        "id": "3458",
+        "name": "Guadalupe",
+        "state_id": "17"
+    },
+    {
+        "id": "3459",
+        "name": "Guaribas",
+        "state_id": "17"
+    },
+    {
+        "id": "3460",
+        "name": "Hugo Napoleão",
+        "state_id": "17"
+    },
+    {
+        "id": "3461",
+        "name": "Ilha Grande",
+        "state_id": "17"
+    },
+    {
+        "id": "3462",
+        "name": "Inhuma",
+        "state_id": "17"
+    },
+    {
+        "id": "3463",
+        "name": "Ipiranga do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3464",
+        "name": "Isaías Coelho",
+        "state_id": "17"
+    },
+    {
+        "id": "3465",
+        "name": "Itainópolis",
+        "state_id": "17"
+    },
+    {
+        "id": "3466",
+        "name": "Itaueira",
+        "state_id": "17"
+    },
+    {
+        "id": "3467",
+        "name": "Jacobina do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3468",
+        "name": "Jaicós",
+        "state_id": "17"
+    },
+    {
+        "id": "3469",
+        "name": "Jardim do Mulato",
+        "state_id": "17"
+    },
+    {
+        "id": "3470",
+        "name": "Jatobá do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3471",
+        "name": "Jerumenha",
+        "state_id": "17"
+    },
+    {
+        "id": "3472",
+        "name": "João Costa",
+        "state_id": "17"
+    },
+    {
+        "id": "3473",
+        "name": "Joaquim Pires",
+        "state_id": "17"
+    },
+    {
+        "id": "3474",
+        "name": "Joca Marques",
+        "state_id": "17"
+    },
+    {
+        "id": "3475",
+        "name": "José de Freitas",
+        "state_id": "17"
+    },
+    {
+        "id": "3476",
+        "name": "Juazeiro do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3477",
+        "name": "Júlio Borges",
+        "state_id": "17"
+    },
+    {
+        "id": "3478",
+        "name": "Jurema",
+        "state_id": "17"
+    },
+    {
+        "id": "3479",
+        "name": "Lagoa Alegre",
+        "state_id": "17"
+    },
+    {
+        "id": "3480",
+        "name": "Lagoa de São Francisco",
+        "state_id": "17"
+    },
+    {
+        "id": "3481",
+        "name": "Lagoa do Barro do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3482",
+        "name": "Lagoa do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3483",
+        "name": "Lagoa do Sítio",
+        "state_id": "17"
+    },
+    {
+        "id": "3484",
+        "name": "Lagoinha do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3485",
+        "name": "Landri Sales",
+        "state_id": "17"
+    },
+    {
+        "id": "3486",
+        "name": "Luís Correia",
+        "state_id": "17"
+    },
+    {
+        "id": "3487",
+        "name": "Luzilândia",
+        "state_id": "17"
+    },
+    {
+        "id": "3488",
+        "name": "Madeiro",
+        "state_id": "17"
+    },
+    {
+        "id": "3489",
+        "name": "Manoel Emídio",
+        "state_id": "17"
+    },
+    {
+        "id": "3490",
+        "name": "Marcolândia",
+        "state_id": "17"
+    },
+    {
+        "id": "3491",
+        "name": "Marcos Parente",
+        "state_id": "17"
+    },
+    {
+        "id": "3492",
+        "name": "Massapê do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3493",
+        "name": "Matias Olímpio",
+        "state_id": "17"
+    },
+    {
+        "id": "3494",
+        "name": "Miguel Alves",
+        "state_id": "17"
+    },
+    {
+        "id": "3495",
+        "name": "Miguel Leão",
+        "state_id": "17"
+    },
+    {
+        "id": "3496",
+        "name": "Milton Brandão",
+        "state_id": "17"
+    },
+    {
+        "id": "3497",
+        "name": "Monsenhor Gil",
+        "state_id": "17"
+    },
+    {
+        "id": "3498",
+        "name": "Monsenhor Hipólito",
+        "state_id": "17"
+    },
+    {
+        "id": "3499",
+        "name": "Monte Alegre do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3500",
+        "name": "Morro Cabeça no Tempo",
+        "state_id": "17"
+    },
+    {
+        "id": "3501",
+        "name": "Morro do Chapéu do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3502",
+        "name": "Murici dos Portelas",
+        "state_id": "17"
+    },
+    {
+        "id": "3503",
+        "name": "Nazaré do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3504",
+        "name": "Nossa Senhora de Nazaré",
+        "state_id": "17"
+    },
+    {
+        "id": "3505",
+        "name": "Nossa Senhora dos Remédios",
+        "state_id": "17"
+    },
+    {
+        "id": "3506",
+        "name": "Nova Santa Rita",
+        "state_id": "17"
+    },
+    {
+        "id": "3507",
+        "name": "Novo Oriente do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3508",
+        "name": "Novo Santo Antônio",
+        "state_id": "17"
+    },
+    {
+        "id": "3509",
+        "name": "Oeiras",
+        "state_id": "17"
+    },
+    {
+        "id": "3510",
+        "name": "Olho d`Água do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3511",
+        "name": "Padre Marcos",
+        "state_id": "17"
+    },
+    {
+        "id": "3512",
+        "name": "Paes Landim",
+        "state_id": "17"
+    },
+    {
+        "id": "3513",
+        "name": "Pajeú do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3514",
+        "name": "Palmeira do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3515",
+        "name": "Palmeirais",
+        "state_id": "17"
+    },
+    {
+        "id": "3516",
+        "name": "Paquetá",
+        "state_id": "17"
+    },
+    {
+        "id": "3517",
+        "name": "Parnaguá",
+        "state_id": "17"
+    },
+    {
+        "id": "3518",
+        "name": "Parnaíba",
+        "state_id": "17"
+    },
+    {
+        "id": "3519",
+        "name": "Passagem Franca do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3520",
+        "name": "Patos do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3521",
+        "name": "Pau d`Arco do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3522",
+        "name": "Paulistana",
+        "state_id": "17"
+    },
+    {
+        "id": "3523",
+        "name": "Pavussu",
+        "state_id": "17"
+    },
+    {
+        "id": "3524",
+        "name": "Pedro II",
+        "state_id": "17"
+    },
+    {
+        "id": "3525",
+        "name": "Pedro Laurentino",
+        "state_id": "17"
+    },
+    {
+        "id": "3526",
+        "name": "Picos",
+        "state_id": "17"
+    },
+    {
+        "id": "3527",
+        "name": "Pimenteiras",
+        "state_id": "17"
+    },
+    {
+        "id": "3528",
+        "name": "Pio IX",
+        "state_id": "17"
+    },
+    {
+        "id": "3529",
+        "name": "Piracuruca",
+        "state_id": "17"
+    },
+    {
+        "id": "3530",
+        "name": "Piripiri",
+        "state_id": "17"
+    },
+    {
+        "id": "3531",
+        "name": "Porto",
+        "state_id": "17"
+    },
+    {
+        "id": "3532",
+        "name": "Porto Alegre do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3533",
+        "name": "Prata do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3534",
+        "name": "Queimada Nova",
+        "state_id": "17"
+    },
+    {
+        "id": "3535",
+        "name": "Redenção do Gurguéia",
+        "state_id": "17"
+    },
+    {
+        "id": "3536",
+        "name": "Regeneração",
+        "state_id": "17"
+    },
+    {
+        "id": "3537",
+        "name": "Riacho Frio",
+        "state_id": "17"
+    },
+    {
+        "id": "3538",
+        "name": "Ribeira do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3539",
+        "name": "Ribeiro Gonçalves",
+        "state_id": "17"
+    },
+    {
+        "id": "3540",
+        "name": "Rio Grande do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3541",
+        "name": "Santa Cruz do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3542",
+        "name": "Santa Cruz dos Milagres",
+        "state_id": "17"
+    },
+    {
+        "id": "3543",
+        "name": "Santa Filomena",
+        "state_id": "17"
+    },
+    {
+        "id": "3544",
+        "name": "Santa Luz",
+        "state_id": "17"
+    },
+    {
+        "id": "3545",
+        "name": "Santa Rosa do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3546",
+        "name": "Santana do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3547",
+        "name": "Santo Antônio de Lisboa",
+        "state_id": "17"
+    },
+    {
+        "id": "3548",
+        "name": "Santo Antônio dos Milagres",
+        "state_id": "17"
+    },
+    {
+        "id": "3549",
+        "name": "Santo Inácio do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3550",
+        "name": "São Braz do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3551",
+        "name": "São Félix do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3552",
+        "name": "São Francisco de Assis do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3553",
+        "name": "São Francisco do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3554",
+        "name": "São Gonçalo do Gurguéia",
+        "state_id": "17"
+    },
+    {
+        "id": "3555",
+        "name": "São Gonçalo do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3556",
+        "name": "São João da Canabrava",
+        "state_id": "17"
+    },
+    {
+        "id": "3557",
+        "name": "São João da Fronteira",
+        "state_id": "17"
+    },
+    {
+        "id": "3558",
+        "name": "São João da Serra",
+        "state_id": "17"
+    },
+    {
+        "id": "3559",
+        "name": "São João da Varjota",
+        "state_id": "17"
+    },
+    {
+        "id": "3560",
+        "name": "São João do Arraial",
+        "state_id": "17"
+    },
+    {
+        "id": "3561",
+        "name": "São João do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3562",
+        "name": "São José do Divino",
+        "state_id": "17"
+    },
+    {
+        "id": "3563",
+        "name": "São José do Peixe",
+        "state_id": "17"
+    },
+    {
+        "id": "3564",
+        "name": "São José do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3565",
+        "name": "São Julião",
+        "state_id": "17"
+    },
+    {
+        "id": "3566",
+        "name": "São Lourenço do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3567",
+        "name": "São Luis do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3568",
+        "name": "São Miguel da Baixa Grande",
+        "state_id": "17"
+    },
+    {
+        "id": "3569",
+        "name": "São Miguel do Fidalgo",
+        "state_id": "17"
+    },
+    {
+        "id": "3570",
+        "name": "São Miguel do Tapuio",
+        "state_id": "17"
+    },
+    {
+        "id": "3571",
+        "name": "São Pedro do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3572",
+        "name": "São Raimundo Nonato",
+        "state_id": "17"
+    },
+    {
+        "id": "3573",
+        "name": "Sebastião Barros",
+        "state_id": "17"
+    },
+    {
+        "id": "3574",
+        "name": "Sebastião Leal",
+        "state_id": "17"
+    },
+    {
+        "id": "3575",
+        "name": "Sigefredo Pacheco",
+        "state_id": "17"
+    },
+    {
+        "id": "3576",
+        "name": "Simões",
+        "state_id": "17"
+    },
+    {
+        "id": "3577",
+        "name": "Simplício Mendes",
+        "state_id": "17"
+    },
+    {
+        "id": "3578",
+        "name": "Socorro do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3579",
+        "name": "Sussuapara",
+        "state_id": "17"
+    },
+    {
+        "id": "3580",
+        "name": "Tamboril do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3581",
+        "name": "Tanque do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3582",
+        "name": "Teresina",
+        "state_id": "17"
+    },
+    {
+        "id": "3583",
+        "name": "União",
+        "state_id": "17"
+    },
+    {
+        "id": "3584",
+        "name": "Uruçuí",
+        "state_id": "17"
+    },
+    {
+        "id": "3585",
+        "name": "Valença do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3586",
+        "name": "Várzea Branca",
+        "state_id": "17"
+    },
+    {
+        "id": "3587",
+        "name": "Várzea Grande",
+        "state_id": "17"
+    },
+    {
+        "id": "3588",
+        "name": "Vera Mendes",
+        "state_id": "17"
+    },
+    {
+        "id": "3589",
+        "name": "Vila Nova do Piauí",
+        "state_id": "17"
+    },
+    {
+        "id": "3590",
+        "name": "Wall Ferraz",
+        "state_id": "17"
+    }
+]

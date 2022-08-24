@@ -1,0 +1,462 @@
+[
+    {
+        "id": "3591",
+        "name": "Angra dos Reis",
+        "state_id": "19"
+    },
+    {
+        "id": "3592",
+        "name": "Aperibé",
+        "state_id": "19"
+    },
+    {
+        "id": "3593",
+        "name": "Araruama",
+        "state_id": "19"
+    },
+    {
+        "id": "3594",
+        "name": "Areal",
+        "state_id": "19"
+    },
+    {
+        "id": "3595",
+        "name": "Armação dos Búzios",
+        "state_id": "19"
+    },
+    {
+        "id": "3596",
+        "name": "Arraial do Cabo",
+        "state_id": "19"
+    },
+    {
+        "id": "3597",
+        "name": "Barra do Piraí",
+        "state_id": "19"
+    },
+    {
+        "id": "3598",
+        "name": "Barra Mansa",
+        "state_id": "19"
+    },
+    {
+        "id": "3599",
+        "name": "Belford Roxo",
+        "state_id": "19"
+    },
+    {
+        "id": "3600",
+        "name": "Bom Jardim",
+        "state_id": "19"
+    },
+    {
+        "id": "3601",
+        "name": "Bom Jesus do Itabapoana",
+        "state_id": "19"
+    },
+    {
+        "id": "3602",
+        "name": "Cabo Frio",
+        "state_id": "19"
+    },
+    {
+        "id": "3603",
+        "name": "Cachoeiras de Macacu",
+        "state_id": "19"
+    },
+    {
+        "id": "3604",
+        "name": "Cambuci",
+        "state_id": "19"
+    },
+    {
+        "id": "3605",
+        "name": "Campos dos Goytacazes",
+        "state_id": "19"
+    },
+    {
+        "id": "3606",
+        "name": "Cantagalo",
+        "state_id": "19"
+    },
+    {
+        "id": "3607",
+        "name": "Carapebus",
+        "state_id": "19"
+    },
+    {
+        "id": "3608",
+        "name": "Cardoso Moreira",
+        "state_id": "19"
+    },
+    {
+        "id": "3609",
+        "name": "Carmo",
+        "state_id": "19"
+    },
+    {
+        "id": "3610",
+        "name": "Casimiro de Abreu",
+        "state_id": "19"
+    },
+    {
+        "id": "3611",
+        "name": "Comendador Levy Gasparian",
+        "state_id": "19"
+    },
+    {
+        "id": "3612",
+        "name": "Conceição de Macabu",
+        "state_id": "19"
+    },
+    {
+        "id": "3613",
+        "name": "Cordeiro",
+        "state_id": "19"
+    },
+    {
+        "id": "3614",
+        "name": "Duas Barras",
+        "state_id": "19"
+    },
+    {
+        "id": "3615",
+        "name": "Duque de Caxias",
+        "state_id": "19"
+    },
+    {
+        "id": "3616",
+        "name": "Engenheiro Paulo de Frontin",
+        "state_id": "19"
+    },
+    {
+        "id": "3617",
+        "name": "Guapimirim",
+        "state_id": "19"
+    },
+    {
+        "id": "3618",
+        "name": "Iguaba Grande",
+        "state_id": "19"
+    },
+    {
+        "id": "3619",
+        "name": "Itaboraí",
+        "state_id": "19"
+    },
+    {
+        "id": "3620",
+        "name": "Itaguaí",
+        "state_id": "19"
+    },
+    {
+        "id": "3621",
+        "name": "Italva",
+        "state_id": "19"
+    },
+    {
+        "id": "3622",
+        "name": "Itaocara",
+        "state_id": "19"
+    },
+    {
+        "id": "3623",
+        "name": "Itaperuna",
+        "state_id": "19"
+    },
+    {
+        "id": "3624",
+        "name": "Itatiaia",
+        "state_id": "19"
+    },
+    {
+        "id": "3625",
+        "name": "Japeri",
+        "state_id": "19"
+    },
+    {
+        "id": "3626",
+        "name": "Laje do Muriaé",
+        "state_id": "19"
+    },
+    {
+        "id": "3627",
+        "name": "Macaé",
+        "state_id": "19"
+    },
+    {
+        "id": "3628",
+        "name": "Macuco",
+        "state_id": "19"
+    },
+    {
+        "id": "3629",
+        "name": "Magé",
+        "state_id": "19"
+    },
+    {
+        "id": "3630",
+        "name": "Mangaratiba",
+        "state_id": "19"
+    },
+    {
+        "id": "3631",
+        "name": "Maricá",
+        "state_id": "19"
+    },
+    {
+        "id": "3632",
+        "name": "Mendes",
+        "state_id": "19"
+    },
+    {
+        "id": "3633",
+        "name": "Mesquita",
+        "state_id": "19"
+    },
+    {
+        "id": "3634",
+        "name": "Miguel Pereira",
+        "state_id": "19"
+    },
+    {
+        "id": "3635",
+        "name": "Miracema",
+        "state_id": "19"
+    },
+    {
+        "id": "3636",
+        "name": "Natividade",
+        "state_id": "19"
+    },
+    {
+        "id": "3637",
+        "name": "Nilópolis",
+        "state_id": "19"
+    },
+    {
+        "id": "3638",
+        "name": "Niterói",
+        "state_id": "19"
+    },
+    {
+        "id": "3639",
+        "name": "Nova Friburgo",
+        "state_id": "19"
+    },
+    {
+        "id": "3640",
+        "name": "Nova Iguaçu",
+        "state_id": "19"
+    },
+    {
+        "id": "3641",
+        "name": "Paracambi",
+        "state_id": "19"
+    },
+    {
+        "id": "3642",
+        "name": "Paraíba do Sul",
+        "state_id": "19"
+    },
+    {
+        "id": "3643",
+        "name": "Parati",
+        "state_id": "19"
+    },
+    {
+        "id": "3644",
+        "name": "Paty do Alferes",
+        "state_id": "19"
+    },
+    {
+        "id": "3645",
+        "name": "Petrópolis",
+        "state_id": "19"
+    },
+    {
+        "id": "3646",
+        "name": "Pinheiral",
+        "state_id": "19"
+    },
+    {
+        "id": "3647",
+        "name": "Piraí",
+        "state_id": "19"
+    },
+    {
+        "id": "3648",
+        "name": "Porciúncula",
+        "state_id": "19"
+    },
+    {
+        "id": "3649",
+        "name": "Porto Real",
+        "state_id": "19"
+    },
+    {
+        "id": "3650",
+        "name": "Quatis",
+        "state_id": "19"
+    },
+    {
+        "id": "3651",
+        "name": "Queimados",
+        "state_id": "19"
+    },
+    {
+        "id": "3652",
+        "name": "Quissamã",
+        "state_id": "19"
+    },
+    {
+        "id": "3653",
+        "name": "Resende",
+        "state_id": "19"
+    },
+    {
+        "id": "3654",
+        "name": "Rio Bonito",
+        "state_id": "19"
+    },
+    {
+        "id": "3655",
+        "name": "Rio Claro",
+        "state_id": "19"
+    },
+    {
+        "id": "3656",
+        "name": "Rio das Flores",
+        "state_id": "19"
+    },
+    {
+        "id": "3657",
+        "name": "Rio das Ostras",
+        "state_id": "19"
+    },
+    {
+        "id": "3658",
+        "name": "Rio de Janeiro",
+        "state_id": "19"
+    },
+    {
+        "id": "3659",
+        "name": "Santa Maria Madalena",
+        "state_id": "19"
+    },
+    {
+        "id": "3660",
+        "name": "Santo Antônio de Pádua",
+        "state_id": "19"
+    },
+    {
+        "id": "3661",
+        "name": "São Fidélis",
+        "state_id": "19"
+    },
+    {
+        "id": "3662",
+        "name": "São Francisco de Itabapoana",
+        "state_id": "19"
+    },
+    {
+        "id": "3663",
+        "name": "São Gonçalo",
+        "state_id": "19"
+    },
+    {
+        "id": "3664",
+        "name": "São João da Barra",
+        "state_id": "19"
+    },
+    {
+        "id": "3665",
+        "name": "São João de Meriti",
+        "state_id": "19"
+    },
+    {
+        "id": "3666",
+        "name": "São José de Ubá",
+        "state_id": "19"
+    },
+    {
+        "id": "3667",
+        "name": "São José do Vale do Rio Preto",
+        "state_id": "19"
+    },
+    {
+        "id": "3668",
+        "name": "São Pedro da Aldeia",
+        "state_id": "19"
+    },
+    {
+        "id": "3669",
+        "name": "São Sebastião do Alto",
+        "state_id": "19"
+    },
+    {
+        "id": "3670",
+        "name": "Sapucaia",
+        "state_id": "19"
+    },
+    {
+        "id": "3671",
+        "name": "Saquarema",
+        "state_id": "19"
+    },
+    {
+        "id": "3672",
+        "name": "Seropédica",
+        "state_id": "19"
+    },
+    {
+        "id": "3673",
+        "name": "Silva Jardim",
+        "state_id": "19"
+    },
+    {
+        "id": "3674",
+        "name": "Sumidouro",
+        "state_id": "19"
+    },
+    {
+        "id": "3675",
+        "name": "Tanguá",
+        "state_id": "19"
+    },
+    {
+        "id": "3676",
+        "name": "Teresópolis",
+        "state_id": "19"
+    },
+    {
+        "id": "3677",
+        "name": "Trajano de Morais",
+        "state_id": "19"
+    },
+    {
+        "id": "3678",
+        "name": "Três Rios",
+        "state_id": "19"
+    },
+    {
+        "id": "3679",
+        "name": "Valença",
+        "state_id": "19"
+    },
+    {
+        "id": "3680",
+        "name": "Varre-Sai",
+        "state_id": "19"
+    },
+    {
+        "id": "3681",
+        "name": "Vassouras",
+        "state_id": "19"
+    },
+    {
+        "id": "3682",
+        "name": "Volta Redonda",
+        "state_id": "19"
+    }
+]

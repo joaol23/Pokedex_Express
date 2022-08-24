@@ -1,0 +1,717 @@
+[
+    {
+        "id": "2418",
+        "name": "Abaetetuba",
+        "state_id": "14"
+    },
+    {
+        "id": "2419",
+        "name": "Abel Figueiredo",
+        "state_id": "14"
+    },
+    {
+        "id": "2420",
+        "name": "Acará",
+        "state_id": "14"
+    },
+    {
+        "id": "2421",
+        "name": "Afuá",
+        "state_id": "14"
+    },
+    {
+        "id": "2422",
+        "name": "Água Azul do Norte",
+        "state_id": "14"
+    },
+    {
+        "id": "2423",
+        "name": "Alenquer",
+        "state_id": "14"
+    },
+    {
+        "id": "2424",
+        "name": "Almeirim",
+        "state_id": "14"
+    },
+    {
+        "id": "2425",
+        "name": "Altamira",
+        "state_id": "14"
+    },
+    {
+        "id": "2426",
+        "name": "Anajás",
+        "state_id": "14"
+    },
+    {
+        "id": "2427",
+        "name": "Ananindeua",
+        "state_id": "14"
+    },
+    {
+        "id": "2428",
+        "name": "Anapu",
+        "state_id": "14"
+    },
+    {
+        "id": "2429",
+        "name": "Augusto Corrêa",
+        "state_id": "14"
+    },
+    {
+        "id": "2430",
+        "name": "Aurora do Pará",
+        "state_id": "14"
+    },
+    {
+        "id": "2431",
+        "name": "Aveiro",
+        "state_id": "14"
+    },
+    {
+        "id": "2432",
+        "name": "Bagre",
+        "state_id": "14"
+    },
+    {
+        "id": "2433",
+        "name": "Baião",
+        "state_id": "14"
+    },
+    {
+        "id": "2434",
+        "name": "Bannach",
+        "state_id": "14"
+    },
+    {
+        "id": "2435",
+        "name": "Barcarena",
+        "state_id": "14"
+    },
+    {
+        "id": "2436",
+        "name": "Belém",
+        "state_id": "14"
+    },
+    {
+        "id": "2437",
+        "name": "Belterra",
+        "state_id": "14"
+    },
+    {
+        "id": "2438",
+        "name": "Benevides",
+        "state_id": "14"
+    },
+    {
+        "id": "2439",
+        "name": "Bom Jesus do Tocantins",
+        "state_id": "14"
+    },
+    {
+        "id": "2440",
+        "name": "Bonito",
+        "state_id": "14"
+    },
+    {
+        "id": "2441",
+        "name": "Bragança",
+        "state_id": "14"
+    },
+    {
+        "id": "2442",
+        "name": "Brasil Novo",
+        "state_id": "14"
+    },
+    {
+        "id": "2443",
+        "name": "Brejo Grande do Araguaia",
+        "state_id": "14"
+    },
+    {
+        "id": "2444",
+        "name": "Breu Branco",
+        "state_id": "14"
+    },
+    {
+        "id": "2445",
+        "name": "Breves",
+        "state_id": "14"
+    },
+    {
+        "id": "2446",
+        "name": "Bujaru",
+        "state_id": "14"
+    },
+    {
+        "id": "2447",
+        "name": "Cachoeira do Arari",
+        "state_id": "14"
+    },
+    {
+        "id": "2448",
+        "name": "Cachoeira do Piriá",
+        "state_id": "14"
+    },
+    {
+        "id": "2449",
+        "name": "Cametá",
+        "state_id": "14"
+    },
+    {
+        "id": "2450",
+        "name": "Canaã dos Carajás",
+        "state_id": "14"
+    },
+    {
+        "id": "2451",
+        "name": "Capanema",
+        "state_id": "14"
+    },
+    {
+        "id": "2452",
+        "name": "Capitão Poço",
+        "state_id": "14"
+    },
+    {
+        "id": "2453",
+        "name": "Castanhal",
+        "state_id": "14"
+    },
+    {
+        "id": "2454",
+        "name": "Chaves",
+        "state_id": "14"
+    },
+    {
+        "id": "2455",
+        "name": "Colares",
+        "state_id": "14"
+    },
+    {
+        "id": "2456",
+        "name": "Conceição do Araguaia",
+        "state_id": "14"
+    },
+    {
+        "id": "2457",
+        "name": "Concórdia do Pará",
+        "state_id": "14"
+    },
+    {
+        "id": "2458",
+        "name": "Cumaru do Norte",
+        "state_id": "14"
+    },
+    {
+        "id": "2459",
+        "name": "Curionópolis",
+        "state_id": "14"
+    },
+    {
+        "id": "2460",
+        "name": "Curralinho",
+        "state_id": "14"
+    },
+    {
+        "id": "2461",
+        "name": "Curuá",
+        "state_id": "14"
+    },
+    {
+        "id": "2462",
+        "name": "Curuçá",
+        "state_id": "14"
+    },
+    {
+        "id": "2463",
+        "name": "Dom Eliseu",
+        "state_id": "14"
+    },
+    {
+        "id": "2464",
+        "name": "Eldorado dos Carajás",
+        "state_id": "14"
+    },
+    {
+        "id": "2465",
+        "name": "Faro",
+        "state_id": "14"
+    },
+    {
+        "id": "2466",
+        "name": "Floresta do Araguaia",
+        "state_id": "14"
+    },
+    {
+        "id": "2467",
+        "name": "Garrafão do Norte",
+        "state_id": "14"
+    },
+    {
+        "id": "2468",
+        "name": "Goianésia do Pará",
+        "state_id": "14"
+    },
+    {
+        "id": "2469",
+        "name": "Gurupá",
+        "state_id": "14"
+    },
+    {
+        "id": "2470",
+        "name": "Igarapé-Açu",
+        "state_id": "14"
+    },
+    {
+        "id": "2471",
+        "name": "Igarapé-Miri",
+        "state_id": "14"
+    },
+    {
+        "id": "2472",
+        "name": "Inhangapi",
+        "state_id": "14"
+    },
+    {
+        "id": "2473",
+        "name": "Ipixuna do Pará",
+        "state_id": "14"
+    },
+    {
+        "id": "2474",
+        "name": "Irituia",
+        "state_id": "14"
+    },
+    {
+        "id": "2475",
+        "name": "Itaituba",
+        "state_id": "14"
+    },
+    {
+        "id": "2476",
+        "name": "Itupiranga",
+        "state_id": "14"
+    },
+    {
+        "id": "2477",
+        "name": "Jacareacanga",
+        "state_id": "14"
+    },
+    {
+        "id": "2478",
+        "name": "Jacundá",
+        "state_id": "14"
+    },
+    {
+        "id": "2479",
+        "name": "Juruti",
+        "state_id": "14"
+    },
+    {
+        "id": "2480",
+        "name": "Limoeiro do Ajuru",
+        "state_id": "14"
+    },
+    {
+        "id": "2481",
+        "name": "Mãe do Rio",
+        "state_id": "14"
+    },
+    {
+        "id": "2482",
+        "name": "Magalhães Barata",
+        "state_id": "14"
+    },
+    {
+        "id": "2483",
+        "name": "Marabá",
+        "state_id": "14"
+    },
+    {
+        "id": "2484",
+        "name": "Maracanã",
+        "state_id": "14"
+    },
+    {
+        "id": "2485",
+        "name": "Marapanim",
+        "state_id": "14"
+    },
+    {
+        "id": "2486",
+        "name": "Marituba",
+        "state_id": "14"
+    },
+    {
+        "id": "2487",
+        "name": "Medicilândia",
+        "state_id": "14"
+    },
+    {
+        "id": "2488",
+        "name": "Melgaço",
+        "state_id": "14"
+    },
+    {
+        "id": "2489",
+        "name": "Mocajuba",
+        "state_id": "14"
+    },
+    {
+        "id": "2490",
+        "name": "Moju",
+        "state_id": "14"
+    },
+    {
+        "id": "2491",
+        "name": "Monte Alegre",
+        "state_id": "14"
+    },
+    {
+        "id": "2492",
+        "name": "Muaná",
+        "state_id": "14"
+    },
+    {
+        "id": "2493",
+        "name": "Nova Esperança do Piriá",
+        "state_id": "14"
+    },
+    {
+        "id": "2494",
+        "name": "Nova Ipixuna",
+        "state_id": "14"
+    },
+    {
+        "id": "2495",
+        "name": "Nova Timboteua",
+        "state_id": "14"
+    },
+    {
+        "id": "2496",
+        "name": "Novo Progresso",
+        "state_id": "14"
+    },
+    {
+        "id": "2497",
+        "name": "Novo Repartimento",
+        "state_id": "14"
+    },
+    {
+        "id": "2498",
+        "name": "Óbidos",
+        "state_id": "14"
+    },
+    {
+        "id": "2499",
+        "name": "Oeiras do Pará",
+        "state_id": "14"
+    },
+    {
+        "id": "2500",
+        "name": "Oriximiná",
+        "state_id": "14"
+    },
+    {
+        "id": "2501",
+        "name": "Ourém",
+        "state_id": "14"
+    },
+    {
+        "id": "2502",
+        "name": "Ourilândia do Norte",
+        "state_id": "14"
+    },
+    {
+        "id": "2503",
+        "name": "Pacajá",
+        "state_id": "14"
+    },
+    {
+        "id": "2504",
+        "name": "Palestina do Pará",
+        "state_id": "14"
+    },
+    {
+        "id": "2505",
+        "name": "Paragominas",
+        "state_id": "14"
+    },
+    {
+        "id": "2506",
+        "name": "Parauapebas",
+        "state_id": "14"
+    },
+    {
+        "id": "2507",
+        "name": "Pau d`Arco",
+        "state_id": "14"
+    },
+    {
+        "id": "2508",
+        "name": "Peixe-Boi",
+        "state_id": "14"
+    },
+    {
+        "id": "2509",
+        "name": "Piçarra",
+        "state_id": "14"
+    },
+    {
+        "id": "2510",
+        "name": "Placas",
+        "state_id": "14"
+    },
+    {
+        "id": "2511",
+        "name": "Ponta de Pedras",
+        "state_id": "14"
+    },
+    {
+        "id": "2512",
+        "name": "Portel",
+        "state_id": "14"
+    },
+    {
+        "id": "2513",
+        "name": "Porto de Moz",
+        "state_id": "14"
+    },
+    {
+        "id": "2514",
+        "name": "Prainha",
+        "state_id": "14"
+    },
+    {
+        "id": "2515",
+        "name": "Primavera",
+        "state_id": "14"
+    },
+    {
+        "id": "2516",
+        "name": "Quatipuru",
+        "state_id": "14"
+    },
+    {
+        "id": "2517",
+        "name": "Redenção",
+        "state_id": "14"
+    },
+    {
+        "id": "2518",
+        "name": "Rio Maria",
+        "state_id": "14"
+    },
+    {
+        "id": "2519",
+        "name": "Rondon do Pará",
+        "state_id": "14"
+    },
+    {
+        "id": "2520",
+        "name": "Rurópolis",
+        "state_id": "14"
+    },
+    {
+        "id": "2521",
+        "name": "Salinópolis",
+        "state_id": "14"
+    },
+    {
+        "id": "2522",
+        "name": "Salvaterra",
+        "state_id": "14"
+    },
+    {
+        "id": "2523",
+        "name": "Santa Bárbara do Pará",
+        "state_id": "14"
+    },
+    {
+        "id": "2524",
+        "name": "Santa Cruz do Arari",
+        "state_id": "14"
+    },
+    {
+        "id": "2525",
+        "name": "Santa Isabel do Pará",
+        "state_id": "14"
+    },
+    {
+        "id": "2526",
+        "name": "Santa Luzia do Pará",
+        "state_id": "14"
+    },
+    {
+        "id": "2527",
+        "name": "Santa Maria das Barreiras",
+        "state_id": "14"
+    },
+    {
+        "id": "2528",
+        "name": "Santa Maria do Pará",
+        "state_id": "14"
+    },
+    {
+        "id": "2529",
+        "name": "Santana do Araguaia",
+        "state_id": "14"
+    },
+    {
+        "id": "2530",
+        "name": "Santarém",
+        "state_id": "14"
+    },
+    {
+        "id": "2531",
+        "name": "Santarém Novo",
+        "state_id": "14"
+    },
+    {
+        "id": "2532",
+        "name": "Santo Antônio do Tauá",
+        "state_id": "14"
+    },
+    {
+        "id": "2533",
+        "name": "São Caetano de Odivelas",
+        "state_id": "14"
+    },
+    {
+        "id": "2534",
+        "name": "São Domingos do Araguaia",
+        "state_id": "14"
+    },
+    {
+        "id": "2535",
+        "name": "São Domingos do Capim",
+        "state_id": "14"
+    },
+    {
+        "id": "2536",
+        "name": "São Félix do Xingu",
+        "state_id": "14"
+    },
+    {
+        "id": "2537",
+        "name": "São Francisco do Pará",
+        "state_id": "14"
+    },
+    {
+        "id": "2538",
+        "name": "São Geraldo do Araguaia",
+        "state_id": "14"
+    },
+    {
+        "id": "2539",
+        "name": "São João da Ponta",
+        "state_id": "14"
+    },
+    {
+        "id": "2540",
+        "name": "São João de Pirabas",
+        "state_id": "14"
+    },
+    {
+        "id": "2541",
+        "name": "São João do Araguaia",
+        "state_id": "14"
+    },
+    {
+        "id": "2542",
+        "name": "São Miguel do Guamá",
+        "state_id": "14"
+    },
+    {
+        "id": "2543",
+        "name": "São Sebastião da Boa Vista",
+        "state_id": "14"
+    },
+    {
+        "id": "2544",
+        "name": "Sapucaia",
+        "state_id": "14"
+    },
+    {
+        "id": "2545",
+        "name": "Senador José Porfírio",
+        "state_id": "14"
+    },
+    {
+        "id": "2546",
+        "name": "Soure",
+        "state_id": "14"
+    },
+    {
+        "id": "2547",
+        "name": "Tailândia",
+        "state_id": "14"
+    },
+    {
+        "id": "2548",
+        "name": "Terra Alta",
+        "state_id": "14"
+    },
+    {
+        "id": "2549",
+        "name": "Terra Santa",
+        "state_id": "14"
+    },
+    {
+        "id": "2550",
+        "name": "Tomé-Açu",
+        "state_id": "14"
+    },
+    {
+        "id": "2551",
+        "name": "Tracuateua",
+        "state_id": "14"
+    },
+    {
+        "id": "2552",
+        "name": "Trairão",
+        "state_id": "14"
+    },
+    {
+        "id": "2553",
+        "name": "Tucumã",
+        "state_id": "14"
+    },
+    {
+        "id": "2554",
+        "name": "Tucuruí",
+        "state_id": "14"
+    },
+    {
+        "id": "2555",
+        "name": "Ulianópolis",
+        "state_id": "14"
+    },
+    {
+        "id": "2556",
+        "name": "Uruará",
+        "state_id": "14"
+    },
+    {
+        "id": "2557",
+        "name": "Vigia",
+        "state_id": "14"
+    },
+    {
+        "id": "2558",
+        "name": "Viseu",
+        "state_id": "14"
+    },
+    {
+        "id": "2559",
+        "name": "Vitória do Xingu",
+        "state_id": "14"
+    },
+    {
+        "id": "2560",
+        "name": "Xinguara",
+        "state_id": "14"
+    }
+]

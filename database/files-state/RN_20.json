@@ -1,0 +1,837 @@
+[
+    {
+        "id": "3683",
+        "name": "Acari",
+        "state_id": "20"
+    },
+    {
+        "id": "3684",
+        "name": "Açu",
+        "state_id": "20"
+    },
+    {
+        "id": "3685",
+        "name": "Afonso Bezerra",
+        "state_id": "20"
+    },
+    {
+        "id": "3686",
+        "name": "Água Nova",
+        "state_id": "20"
+    },
+    {
+        "id": "3687",
+        "name": "Alexandria",
+        "state_id": "20"
+    },
+    {
+        "id": "3688",
+        "name": "Almino Afonso",
+        "state_id": "20"
+    },
+    {
+        "id": "3689",
+        "name": "Alto do Rodrigues",
+        "state_id": "20"
+    },
+    {
+        "id": "3690",
+        "name": "Angicos",
+        "state_id": "20"
+    },
+    {
+        "id": "3691",
+        "name": "Antônio Martins",
+        "state_id": "20"
+    },
+    {
+        "id": "3692",
+        "name": "Apodi",
+        "state_id": "20"
+    },
+    {
+        "id": "3693",
+        "name": "Areia Branca",
+        "state_id": "20"
+    },
+    {
+        "id": "3694",
+        "name": "Arês",
+        "state_id": "20"
+    },
+    {
+        "id": "3695",
+        "name": "Augusto Severo",
+        "state_id": "20"
+    },
+    {
+        "id": "3696",
+        "name": "Baía Formosa",
+        "state_id": "20"
+    },
+    {
+        "id": "3697",
+        "name": "Baraúna",
+        "state_id": "20"
+    },
+    {
+        "id": "3698",
+        "name": "Barcelona",
+        "state_id": "20"
+    },
+    {
+        "id": "3699",
+        "name": "Bento Fernandes",
+        "state_id": "20"
+    },
+    {
+        "id": "3700",
+        "name": "Bodó",
+        "state_id": "20"
+    },
+    {
+        "id": "3701",
+        "name": "Bom Jesus",
+        "state_id": "20"
+    },
+    {
+        "id": "3702",
+        "name": "Brejinho",
+        "state_id": "20"
+    },
+    {
+        "id": "3703",
+        "name": "Caiçara do Norte",
+        "state_id": "20"
+    },
+    {
+        "id": "3704",
+        "name": "Caiçara do Rio do Vento",
+        "state_id": "20"
+    },
+    {
+        "id": "3705",
+        "name": "Caicó",
+        "state_id": "20"
+    },
+    {
+        "id": "3706",
+        "name": "Campo Redondo",
+        "state_id": "20"
+    },
+    {
+        "id": "3707",
+        "name": "Canguaretama",
+        "state_id": "20"
+    },
+    {
+        "id": "3708",
+        "name": "Caraúbas",
+        "state_id": "20"
+    },
+    {
+        "id": "3709",
+        "name": "Carnaúba dos Dantas",
+        "state_id": "20"
+    },
+    {
+        "id": "3710",
+        "name": "Carnaubais",
+        "state_id": "20"
+    },
+    {
+        "id": "3711",
+        "name": "Ceará-Mirim",
+        "state_id": "20"
+    },
+    {
+        "id": "3712",
+        "name": "Cerro Corá",
+        "state_id": "20"
+    },
+    {
+        "id": "3713",
+        "name": "Coronel Ezequiel",
+        "state_id": "20"
+    },
+    {
+        "id": "3714",
+        "name": "Coronel João Pessoa",
+        "state_id": "20"
+    },
+    {
+        "id": "3715",
+        "name": "Cruzeta",
+        "state_id": "20"
+    },
+    {
+        "id": "3716",
+        "name": "Currais Novos",
+        "state_id": "20"
+    },
+    {
+        "id": "3717",
+        "name": "Doutor Severiano",
+        "state_id": "20"
+    },
+    {
+        "id": "3718",
+        "name": "Encanto",
+        "state_id": "20"
+    },
+    {
+        "id": "3719",
+        "name": "Equador",
+        "state_id": "20"
+    },
+    {
+        "id": "3720",
+        "name": "Espírito Santo",
+        "state_id": "20"
+    },
+    {
+        "id": "3721",
+        "name": "Extremoz",
+        "state_id": "20"
+    },
+    {
+        "id": "3722",
+        "name": "Felipe Guerra",
+        "state_id": "20"
+    },
+    {
+        "id": "3723",
+        "name": "Fernando Pedroza",
+        "state_id": "20"
+    },
+    {
+        "id": "3724",
+        "name": "Florânia",
+        "state_id": "20"
+    },
+    {
+        "id": "3725",
+        "name": "Francisco Dantas",
+        "state_id": "20"
+    },
+    {
+        "id": "3726",
+        "name": "Frutuoso Gomes",
+        "state_id": "20"
+    },
+    {
+        "id": "3727",
+        "name": "Galinhos",
+        "state_id": "20"
+    },
+    {
+        "id": "3728",
+        "name": "Goianinha",
+        "state_id": "20"
+    },
+    {
+        "id": "3729",
+        "name": "Governador Dix-Sept Rosado",
+        "state_id": "20"
+    },
+    {
+        "id": "3730",
+        "name": "Grossos",
+        "state_id": "20"
+    },
+    {
+        "id": "3731",
+        "name": "Guamaré",
+        "state_id": "20"
+    },
+    {
+        "id": "3732",
+        "name": "Ielmo Marinho",
+        "state_id": "20"
+    },
+    {
+        "id": "3733",
+        "name": "Ipanguaçu",
+        "state_id": "20"
+    },
+    {
+        "id": "3734",
+        "name": "Ipueira",
+        "state_id": "20"
+    },
+    {
+        "id": "3735",
+        "name": "Itajá",
+        "state_id": "20"
+    },
+    {
+        "id": "3736",
+        "name": "Itaú",
+        "state_id": "20"
+    },
+    {
+        "id": "3737",
+        "name": "Jaçanã",
+        "state_id": "20"
+    },
+    {
+        "id": "3738",
+        "name": "Jandaíra",
+        "state_id": "20"
+    },
+    {
+        "id": "3739",
+        "name": "Janduís",
+        "state_id": "20"
+    },
+    {
+        "id": "3740",
+        "name": "Januário Cicco",
+        "state_id": "20"
+    },
+    {
+        "id": "3741",
+        "name": "Japi",
+        "state_id": "20"
+    },
+    {
+        "id": "3742",
+        "name": "Jardim de Angicos",
+        "state_id": "20"
+    },
+    {
+        "id": "3743",
+        "name": "Jardim de Piranhas",
+        "state_id": "20"
+    },
+    {
+        "id": "3744",
+        "name": "Jardim do Seridó",
+        "state_id": "20"
+    },
+    {
+        "id": "3745",
+        "name": "João Câmara",
+        "state_id": "20"
+    },
+    {
+        "id": "3746",
+        "name": "João Dias",
+        "state_id": "20"
+    },
+    {
+        "id": "3747",
+        "name": "José da Penha",
+        "state_id": "20"
+    },
+    {
+        "id": "3748",
+        "name": "Jucurutu",
+        "state_id": "20"
+    },
+    {
+        "id": "3749",
+        "name": "Jundiá",
+        "state_id": "20"
+    },
+    {
+        "id": "3750",
+        "name": "Lagoa d`Anta",
+        "state_id": "20"
+    },
+    {
+        "id": "3751",
+        "name": "Lagoa de Pedras",
+        "state_id": "20"
+    },
+    {
+        "id": "3752",
+        "name": "Lagoa de Velhos",
+        "state_id": "20"
+    },
+    {
+        "id": "3753",
+        "name": "Lagoa Nova",
+        "state_id": "20"
+    },
+    {
+        "id": "3754",
+        "name": "Lagoa Salgada",
+        "state_id": "20"
+    },
+    {
+        "id": "3755",
+        "name": "Lajes",
+        "state_id": "20"
+    },
+    {
+        "id": "3756",
+        "name": "Lajes Pintadas",
+        "state_id": "20"
+    },
+    {
+        "id": "3757",
+        "name": "Lucrécia",
+        "state_id": "20"
+    },
+    {
+        "id": "3758",
+        "name": "Luís Gomes",
+        "state_id": "20"
+    },
+    {
+        "id": "3759",
+        "name": "Macaíba",
+        "state_id": "20"
+    },
+    {
+        "id": "3760",
+        "name": "Macau",
+        "state_id": "20"
+    },
+    {
+        "id": "3761",
+        "name": "Major Sales",
+        "state_id": "20"
+    },
+    {
+        "id": "3762",
+        "name": "Marcelino Vieira",
+        "state_id": "20"
+    },
+    {
+        "id": "3763",
+        "name": "Martins",
+        "state_id": "20"
+    },
+    {
+        "id": "3764",
+        "name": "Maxaranguape",
+        "state_id": "20"
+    },
+    {
+        "id": "3765",
+        "name": "Messias Targino",
+        "state_id": "20"
+    },
+    {
+        "id": "3766",
+        "name": "Montanhas",
+        "state_id": "20"
+    },
+    {
+        "id": "3767",
+        "name": "Monte Alegre",
+        "state_id": "20"
+    },
+    {
+        "id": "3768",
+        "name": "Monte das Gameleiras",
+        "state_id": "20"
+    },
+    {
+        "id": "3769",
+        "name": "Mossoró",
+        "state_id": "20"
+    },
+    {
+        "id": "3770",
+        "name": "Natal",
+        "state_id": "20"
+    },
+    {
+        "id": "3771",
+        "name": "Nísia Floresta",
+        "state_id": "20"
+    },
+    {
+        "id": "3772",
+        "name": "Nova Cruz",
+        "state_id": "20"
+    },
+    {
+        "id": "3773",
+        "name": "Olho-d`Água do Borges",
+        "state_id": "20"
+    },
+    {
+        "id": "3774",
+        "name": "Ouro Branco",
+        "state_id": "20"
+    },
+    {
+        "id": "3775",
+        "name": "Paraná",
+        "state_id": "20"
+    },
+    {
+        "id": "3776",
+        "name": "Paraú",
+        "state_id": "20"
+    },
+    {
+        "id": "3777",
+        "name": "Parazinho",
+        "state_id": "20"
+    },
+    {
+        "id": "3778",
+        "name": "Parelhas",
+        "state_id": "20"
+    },
+    {
+        "id": "3779",
+        "name": "Parnamirim",
+        "state_id": "20"
+    },
+    {
+        "id": "3780",
+        "name": "Passa e Fica",
+        "state_id": "20"
+    },
+    {
+        "id": "3781",
+        "name": "Passagem",
+        "state_id": "20"
+    },
+    {
+        "id": "3782",
+        "name": "Patu",
+        "state_id": "20"
+    },
+    {
+        "id": "3783",
+        "name": "Pau dos Ferros",
+        "state_id": "20"
+    },
+    {
+        "id": "3784",
+        "name": "Pedra Grande",
+        "state_id": "20"
+    },
+    {
+        "id": "3785",
+        "name": "Pedra Preta",
+        "state_id": "20"
+    },
+    {
+        "id": "3786",
+        "name": "Pedro Avelino",
+        "state_id": "20"
+    },
+    {
+        "id": "3787",
+        "name": "Pedro Velho",
+        "state_id": "20"
+    },
+    {
+        "id": "3788",
+        "name": "Pendências",
+        "state_id": "20"
+    },
+    {
+        "id": "3789",
+        "name": "Pilões",
+        "state_id": "20"
+    },
+    {
+        "id": "3790",
+        "name": "Poço Branco",
+        "state_id": "20"
+    },
+    {
+        "id": "3791",
+        "name": "Portalegre",
+        "state_id": "20"
+    },
+    {
+        "id": "3792",
+        "name": "Porto do Mangue",
+        "state_id": "20"
+    },
+    {
+        "id": "3793",
+        "name": "Presidente Juscelino",
+        "state_id": "20"
+    },
+    {
+        "id": "3794",
+        "name": "Pureza",
+        "state_id": "20"
+    },
+    {
+        "id": "3795",
+        "name": "Rafael Fernandes",
+        "state_id": "20"
+    },
+    {
+        "id": "3796",
+        "name": "Rafael Godeiro",
+        "state_id": "20"
+    },
+    {
+        "id": "3797",
+        "name": "Riacho da Cruz",
+        "state_id": "20"
+    },
+    {
+        "id": "3798",
+        "name": "Riacho de Santana",
+        "state_id": "20"
+    },
+    {
+        "id": "3799",
+        "name": "Riachuelo",
+        "state_id": "20"
+    },
+    {
+        "id": "3800",
+        "name": "Rio do Fogo",
+        "state_id": "20"
+    },
+    {
+        "id": "3801",
+        "name": "Rodolfo Fernandes",
+        "state_id": "20"
+    },
+    {
+        "id": "3802",
+        "name": "Ruy Barbosa",
+        "state_id": "20"
+    },
+    {
+        "id": "3803",
+        "name": "Santa Cruz",
+        "state_id": "20"
+    },
+    {
+        "id": "3804",
+        "name": "Santa Maria",
+        "state_id": "20"
+    },
+    {
+        "id": "3805",
+        "name": "Santana do Matos",
+        "state_id": "20"
+    },
+    {
+        "id": "3806",
+        "name": "Santana do Seridó",
+        "state_id": "20"
+    },
+    {
+        "id": "3807",
+        "name": "Santo Antônio",
+        "state_id": "20"
+    },
+    {
+        "id": "3808",
+        "name": "São Bento do Norte",
+        "state_id": "20"
+    },
+    {
+        "id": "3809",
+        "name": "São Bento do Trairí",
+        "state_id": "20"
+    },
+    {
+        "id": "3810",
+        "name": "São Fernando",
+        "state_id": "20"
+    },
+    {
+        "id": "3811",
+        "name": "São Francisco do Oeste",
+        "state_id": "20"
+    },
+    {
+        "id": "3812",
+        "name": "São Gonçalo do Amarante",
+        "state_id": "20"
+    },
+    {
+        "id": "3813",
+        "name": "São João do Sabugi",
+        "state_id": "20"
+    },
+    {
+        "id": "3814",
+        "name": "São José de Mipibu",
+        "state_id": "20"
+    },
+    {
+        "id": "3815",
+        "name": "São José do Campestre",
+        "state_id": "20"
+    },
+    {
+        "id": "3816",
+        "name": "São José do Seridó",
+        "state_id": "20"
+    },
+    {
+        "id": "3817",
+        "name": "São Miguel",
+        "state_id": "20"
+    },
+    {
+        "id": "3818",
+        "name": "São Miguel do Gostoso",
+        "state_id": "20"
+    },
+    {
+        "id": "3819",
+        "name": "São Paulo do Potengi",
+        "state_id": "20"
+    },
+    {
+        "id": "3820",
+        "name": "São Pedro",
+        "state_id": "20"
+    },
+    {
+        "id": "3821",
+        "name": "São Rafael",
+        "state_id": "20"
+    },
+    {
+        "id": "3822",
+        "name": "São Tomé",
+        "state_id": "20"
+    },
+    {
+        "id": "3823",
+        "name": "São Vicente",
+        "state_id": "20"
+    },
+    {
+        "id": "3824",
+        "name": "Senador Elói de Souza",
+        "state_id": "20"
+    },
+    {
+        "id": "3825",
+        "name": "Senador Georgino Avelino",
+        "state_id": "20"
+    },
+    {
+        "id": "3826",
+        "name": "Serra de São Bento",
+        "state_id": "20"
+    },
+    {
+        "id": "3827",
+        "name": "Serra do Mel",
+        "state_id": "20"
+    },
+    {
+        "id": "3828",
+        "name": "Serra Negra do Norte",
+        "state_id": "20"
+    },
+    {
+        "id": "3829",
+        "name": "Serrinha",
+        "state_id": "20"
+    },
+    {
+        "id": "3830",
+        "name": "Serrinha dos Pintos",
+        "state_id": "20"
+    },
+    {
+        "id": "3831",
+        "name": "Severiano Melo",
+        "state_id": "20"
+    },
+    {
+        "id": "3832",
+        "name": "Sítio Novo",
+        "state_id": "20"
+    },
+    {
+        "id": "3833",
+        "name": "Taboleiro Grande",
+        "state_id": "20"
+    },
+    {
+        "id": "3834",
+        "name": "Taipu",
+        "state_id": "20"
+    },
+    {
+        "id": "3835",
+        "name": "Tangará",
+        "state_id": "20"
+    },
+    {
+        "id": "3836",
+        "name": "Tenente Ananias",
+        "state_id": "20"
+    },
+    {
+        "id": "3837",
+        "name": "Tenente Laurentino Cruz",
+        "state_id": "20"
+    },
+    {
+        "id": "3838",
+        "name": "Tibau",
+        "state_id": "20"
+    },
+    {
+        "id": "3839",
+        "name": "Tibau do Sul",
+        "state_id": "20"
+    },
+    {
+        "id": "3840",
+        "name": "Timbaúba dos Batistas",
+        "state_id": "20"
+    },
+    {
+        "id": "3841",
+        "name": "Touros",
+        "state_id": "20"
+    },
+    {
+        "id": "3842",
+        "name": "Triunfo Potiguar",
+        "state_id": "20"
+    },
+    {
+        "id": "3843",
+        "name": "Umarizal",
+        "state_id": "20"
+    },
+    {
+        "id": "3844",
+        "name": "Upanema",
+        "state_id": "20"
+    },
+    {
+        "id": "3845",
+        "name": "Várzea",
+        "state_id": "20"
+    },
+    {
+        "id": "3846",
+        "name": "Venha-Ver",
+        "state_id": "20"
+    },
+    {
+        "id": "3847",
+        "name": "Vera Cruz",
+        "state_id": "20"
+    },
+    {
+        "id": "3848",
+        "name": "Viçosa",
+        "state_id": "20"
+    },
+    {
+        "id": "3849",
+        "name": "Vila Flor",
+        "state_id": "20"
+    }
+]

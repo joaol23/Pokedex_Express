@@ -5,10 +5,10 @@ import { FilesStateController } from "../../controller/files/FilesState.js";
 const filesStateObj = new FilesStateController();
 
 export function routeFilesState(app: express.Application) {
-    app.route("/arquivos-estado")
+    app.route("/api/arquivos-estado")
         .get(async (req: Request, res: Response) => {
             try {
-                filesStateObj.createFavorite(req, res)
+                filesStateObj.getFilesState(req, res)
             } catch (err) {
                 if (err instanceof Exception)
                     res.status(err.status).send({ msg: err.message });

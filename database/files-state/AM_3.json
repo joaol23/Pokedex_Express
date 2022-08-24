@@ -1,0 +1,312 @@
+[
+    {
+        "id": "219",
+        "name": "Alvarães",
+        "state_id": "3"
+    },
+    {
+        "id": "220",
+        "name": "Amaturá",
+        "state_id": "3"
+    },
+    {
+        "id": "221",
+        "name": "Anamã",
+        "state_id": "3"
+    },
+    {
+        "id": "222",
+        "name": "Anori",
+        "state_id": "3"
+    },
+    {
+        "id": "223",
+        "name": "Apuí",
+        "state_id": "3"
+    },
+    {
+        "id": "224",
+        "name": "Atalaia do Norte",
+        "state_id": "3"
+    },
+    {
+        "id": "225",
+        "name": "Autazes",
+        "state_id": "3"
+    },
+    {
+        "id": "226",
+        "name": "Barcelos",
+        "state_id": "3"
+    },
+    {
+        "id": "227",
+        "name": "Barreirinha",
+        "state_id": "3"
+    },
+    {
+        "id": "228",
+        "name": "Benjamin Constant",
+        "state_id": "3"
+    },
+    {
+        "id": "229",
+        "name": "Beruri",
+        "state_id": "3"
+    },
+    {
+        "id": "230",
+        "name": "Boa Vista do Ramos",
+        "state_id": "3"
+    },
+    {
+        "id": "231",
+        "name": "Boca do Acre",
+        "state_id": "3"
+    },
+    {
+        "id": "232",
+        "name": "Borba",
+        "state_id": "3"
+    },
+    {
+        "id": "233",
+        "name": "Caapiranga",
+        "state_id": "3"
+    },
+    {
+        "id": "234",
+        "name": "Canutama",
+        "state_id": "3"
+    },
+    {
+        "id": "235",
+        "name": "Carauari",
+        "state_id": "3"
+    },
+    {
+        "id": "236",
+        "name": "Careiro",
+        "state_id": "3"
+    },
+    {
+        "id": "237",
+        "name": "Careiro da Várzea",
+        "state_id": "3"
+    },
+    {
+        "id": "238",
+        "name": "Coari",
+        "state_id": "3"
+    },
+    {
+        "id": "239",
+        "name": "Codajás",
+        "state_id": "3"
+    },
+    {
+        "id": "240",
+        "name": "Eirunepé",
+        "state_id": "3"
+    },
+    {
+        "id": "241",
+        "name": "Envira",
+        "state_id": "3"
+    },
+    {
+        "id": "242",
+        "name": "Fonte Boa",
+        "state_id": "3"
+    },
+    {
+        "id": "243",
+        "name": "Guajará",
+        "state_id": "3"
+    },
+    {
+        "id": "244",
+        "name": "Humaitá",
+        "state_id": "3"
+    },
+    {
+        "id": "245",
+        "name": "Ipixuna",
+        "state_id": "3"
+    },
+    {
+        "id": "246",
+        "name": "Iranduba",
+        "state_id": "3"
+    },
+    {
+        "id": "247",
+        "name": "Itacoatiara",
+        "state_id": "3"
+    },
+    {
+        "id": "248",
+        "name": "Itamarati",
+        "state_id": "3"
+    },
+    {
+        "id": "249",
+        "name": "Itapiranga",
+        "state_id": "3"
+    },
+    {
+        "id": "250",
+        "name": "Japurá",
+        "state_id": "3"
+    },
+    {
+        "id": "251",
+        "name": "Juruá",
+        "state_id": "3"
+    },
+    {
+        "id": "252",
+        "name": "Jutaí",
+        "state_id": "3"
+    },
+    {
+        "id": "253",
+        "name": "Lábrea",
+        "state_id": "3"
+    },
+    {
+        "id": "254",
+        "name": "Manacapuru",
+        "state_id": "3"
+    },
+    {
+        "id": "255",
+        "name": "Manaquiri",
+        "state_id": "3"
+    },
+    {
+        "id": "256",
+        "name": "Manaus",
+        "state_id": "3"
+    },
+    {
+        "id": "257",
+        "name": "Manicoré",
+        "state_id": "3"
+    },
+    {
+        "id": "258",
+        "name": "Maraã",
+        "state_id": "3"
+    },
+    {
+        "id": "259",
+        "name": "Maués",
+        "state_id": "3"
+    },
+    {
+        "id": "260",
+        "name": "Nhamundá",
+        "state_id": "3"
+    },
+    {
+        "id": "261",
+        "name": "Nova Olinda do Norte",
+        "state_id": "3"
+    },
+    {
+        "id": "262",
+        "name": "Novo Airão",
+        "state_id": "3"
+    },
+    {
+        "id": "263",
+        "name": "Novo Aripuanã",
+        "state_id": "3"
+    },
+    {
+        "id": "264",
+        "name": "Parintins",
+        "state_id": "3"
+    },
+    {
+        "id": "265",
+        "name": "Pauini",
+        "state_id": "3"
+    },
+    {
+        "id": "266",
+        "name": "Presidente Figueiredo",
+        "state_id": "3"
+    },
+    {
+        "id": "267",
+        "name": "Rio Preto da Eva",
+        "state_id": "3"
+    },
+    {
+        "id": "268",
+        "name": "Santa Isabel do Rio Negro",
+        "state_id": "3"
+    },
+    {
+        "id": "269",
+        "name": "Santo Antônio do Içá",
+        "state_id": "3"
+    },
+    {
+        "id": "270",
+        "name": "São Gabriel da Cachoeira",
+        "state_id": "3"
+    },
+    {
+        "id": "271",
+        "name": "São Paulo de Olivença",
+        "state_id": "3"
+    },
+    {
+        "id": "272",
+        "name": "São Sebastião do Uatumã",
+        "state_id": "3"
+    },
+    {
+        "id": "273",
+        "name": "Silves",
+        "state_id": "3"
+    },
+    {
+        "id": "274",
+        "name": "Tabatinga",
+        "state_id": "3"
+    },
+    {
+        "id": "275",
+        "name": "Tapauá",
+        "state_id": "3"
+    },
+    {
+        "id": "276",
+        "name": "Tefé",
+        "state_id": "3"
+    },
+    {
+        "id": "277",
+        "name": "Tonantins",
+        "state_id": "3"
+    },
+    {
+        "id": "278",
+        "name": "Uarini",
+        "state_id": "3"
+    },
+    {
+        "id": "279",
+        "name": "Urucará",
+        "state_id": "3"
+    },
+    {
+        "id": "280",
+        "name": "Urucurituba",
+        "state_id": "3"
+    }
+]
