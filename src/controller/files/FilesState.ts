@@ -14,8 +14,14 @@ export class FilesStateController extends Controller {
 
     async getFilesState(req: Request, res: Response) {
         try {
-            const files = await this.business.getFilesState();
-            res.status(200).json({ data: files });
+            const id = req.query.id;
+            let data;
+            if (id != undefined){
+                data = await this.business.getFileById(id);
+            }else{
+                data = await this.business.getFilesState();
+            }            
+            res.status(200).json({ data: data });
         } catch (err) {
             if (err instanceof Exception)
                 throw new Exception(err.status, err.message, err.saveLog);

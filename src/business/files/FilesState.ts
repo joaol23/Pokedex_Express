@@ -18,7 +18,7 @@ export class FilesStateBusiness extends Business {
         return 'files/'
     }
 
-    async getFilesState() : Promise<FilesStateProps[]> {
+    async getFilesState(): Promise<FilesStateProps[]> {
         if (!(await this.checkFilesExists())) {
             this.createFilterStateFiles();
         }
@@ -68,5 +68,16 @@ export class FilesStateBusiness extends Business {
     async checkFilesExists(): Promise<boolean> {
         let files = await getAllFilesFromDirectory(this.PATH_STATE_FILES);
         return (files.length != 0);
+    }
+
+    async getPathByIdFileState(id: string): Promise<string> {
+        let files = await getAllFilesFromDirectory(this.PATH_STATE_FILES);
+        const file = files.filter(file => file.split('.')[0].split("_")[1] == id)
+        return this.PATH_STATE_FILES + file[0];
+    }
+
+    async getFileById(id: string): Promise<FilesStateProps> {
+        const path = await this.getPathByIdFileState(id);
+        return await getDataArrayFromFile(path);
     }
 }
