@@ -14,7 +14,7 @@ export class FilesStateBusiness extends Business {
         super();
     }
 
-    override getNamespace(): string {
+    getNamespace(): string {
         return 'files/'
     }
 

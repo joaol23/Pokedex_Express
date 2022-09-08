@@ -2,7 +2,7 @@ import { Model } from "./Model.js";
 
 export class GradesModel extends Model {
 
-    override getPath() : string{
+    getPath() : string{
         return 'database/grades.json'
     }
 }

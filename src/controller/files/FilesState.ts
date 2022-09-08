@@ -8,7 +8,7 @@ export class FilesStateController extends Controller {
         super();
     }
 
-    override getNamespace(): string {
+    getNamespace(): string {
         return 'files/'
     }
 
