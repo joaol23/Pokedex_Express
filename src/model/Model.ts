@@ -5,6 +5,8 @@ const fetch = require('node-fetch');
 
 
 export class Model {
+    path : string = '';
+
     async getData(isReturnArray: boolean, especificKey = '') {
         try {
             let data = await fs.readFileSync(this.getPath());
@@ -22,7 +24,9 @@ export class Model {
         }
     }
 
-    getPath(): string { return '' }
+    getPath(): string { return this.path }
+
+    setPath(path: string): void { this.path = path; }
 
     async insertData(data: any, reWriteFile = false) {
         try {
