@@ -1,3 +1,11 @@
+import { Model } from "../model/Model.js";
+
+type joins = {
+    index: string,
+    database: string,
+    especificKey: string
+}
+
 export class Business {
     model: any;
     nextId: number;
@@ -102,5 +110,25 @@ export class Business {
             }
         })
         return data;
+    }
+
+    async getWithJoins(data: Array<any>, joins: joins[]) {
+        let implementData: any;
+        implementData = await joins.map(async (join) => {
+            const modelObj = new Model();
+            modelObj.setPath(join.database);
+            let dataJoin = await modelObj.getData(true, join.especificKey);
+            dataJoin = this.getDataByParameter("id", dataJoin, data[join.index as keyof typeof data], true)
+            return { [join.database]: dataJoin };
+        })
+        const dataImplemented = (await Promise.all(implementData));
+
+        let newData = { ...data };
+
+        dataImplemented.forEach(eachData => {
+            newData = {...newData, ...(eachData as object)};
+        })
+
+        return newData;
     }
 }
