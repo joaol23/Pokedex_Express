@@ -13,7 +13,7 @@ export class MenuController extends Controller {
         try {
             const menu = await this.business.getData(true);
             if (menu.length == 0) {
-                throw new Exception(NOT_FOUND, 'Nenhum pokemon favoritado encontrado para esse usuário', false);
+                throw new Exception(NOT_FOUND, 'Nenhum Menu encontrado...', false);
             }
             res.status(200).send({ data: menu });
         } catch (err) {

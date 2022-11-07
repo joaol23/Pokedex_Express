@@ -1,0 +1,27 @@
+{
+    "nextId": 15,
+    "texts": [
+        {
+            "id": 13,
+            "text": "testes",
+            "idImage": 181913649,
+            "position": {
+                "x": 338,
+                "y": 60.1875
+            },
+            "color": "#0a0a0a",
+            "fontSize": 12
+        },
+        {
+            "id": 14,
+            "text": "Olá ",
+            "idImage": 131087935,
+            "position": {
+                "x": 230.796875,
+                "y": 67.1875
+            },
+            "color": "#0a0a0a",
+            "fontSize": 13
+        }
+    ]
+}

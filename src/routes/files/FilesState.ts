@@ -8,7 +8,7 @@ export function routeFilesState(app: express.Application) {
     app.route("/api/arquivos-estado")
         .get(async (req: Request, res: Response) => {
             try {
-                filesStateObj.getFilesState(req, res)
+                await filesStateObj.getFilesState(req, res)
             } catch (err) {
                 if (err instanceof Exception)
                     res.status(err.status).send({ msg: err.message });

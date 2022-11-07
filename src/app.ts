@@ -9,6 +9,7 @@ import { routeMenu } from './routes/Menu.js';
 import swaggerUi from "swagger-ui-express";
 import { swaggerDocument } from "../src/config/Doc.js"
 import { routeFilesState } from './routes/files/FilesState.js'
+import { routeMemesText } from './routes/memes/MemesText.js';
 
 const app: express.Application = express();
 app.use(express.json())
@@ -19,6 +20,7 @@ routeLogin(app);
 routeFavorite(app);
 routeGrades(app);
 routeMenu(app);
+routeMemesText(app);
 routeFilesState(app);
 
 app.listen(process.env.PORT || PORT, () => {
