@@ -1,12 +1,12 @@
 ## Url Api Online
 
 ```
-  [https://api-projetos.onrender.com/]https://api-projetos.onrender.com/
+  https://api-projetos.onrender.com/
 ```
 ## Documentação Swagger (teste)
 
 ```
-  [https://api-projetos.onrender.com/doc]https://api-projetos.onrender.com/doc
+  https://api-projetos.onrender.com/doc
 ```
 
 ## Documentação da API
